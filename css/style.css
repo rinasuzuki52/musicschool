@@ -1168,6 +1168,43 @@ h2(c-title)
   margin-block: 2.9375rem 1.875rem;
 }
 
+.p-qa__lists {
+  margin-top: 2.25rem;
+  width: 100%;
+}
+
+.p-qa-list {
+  border-bottom: solid 0.05rem;
+}
+
+.p-qa-list__q {
+  display: flex;
+  position: relative;
+  padding-block: 1.25rem 0.9375rem;
+  cursor: pointer;
+}
+
+.p-qa-list__circle {
+  display: flex;
+  color: #FFF;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.21875rem;
+}
+
+.p-qa-list-circle__q {
+  background-color: #000;
+}
+
+.p-qa-list-circle__a {
+  background-color: #cb0000;
+}
+
 @media (min-width: 768px) {
   .u-sp {
     display: none !important;

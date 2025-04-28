@@ -477,3 +477,40 @@
 .p-top-qa {
     margin-block: rem(47) rem(30);
 }
+
+.p-qa__lists {
+    margin-top: rem(36);
+    width: 100%;
+}
+
+.p-qa-list {
+    border-bottom: solid 0.05rem;
+}
+
+.p-qa-list__q {
+    display: flex;
+    position: relative;
+    padding-block: rem(20) rem(15);
+    cursor: pointer;
+}
+
+.p-qa-list__circle {
+    display: flex;
+    color: $font-color2;
+    font-size: rem(20);
+    line-height: calc(30 / 20);
+    width: rem(35);
+    height: rem(35);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: rem(19.5);
+}
+
+.p-qa-list-circle__q {
+    background-color: $font-color1;
+}
+
+.p-qa-list-circle__a {
+    background-color: $main-color;
+}
