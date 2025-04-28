@@ -1164,6 +1164,10 @@ h2(c-title)
   font-weight: 500;
 }
 
+.p-top-qa {
+  margin-block: 2.9375rem 1.875rem;
+}
+
 @media (min-width: 768px) {
   .u-sp {
     display: none !important;
