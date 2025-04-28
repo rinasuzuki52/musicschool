@@ -1108,6 +1108,18 @@ h2(c-title)
   position: relative;
 }
 
+.p-process__lists::before {
+  content: "";
+  width: 1.4375rem;
+  height: 1.4375rem;
+  border-right: 0.1875rem solid #CB0000;
+  border-bottom: 0.1875rem solid #CB0000;
+  position: absolute;
+  left: 4.5%;
+  bottom: 6%;
+  transform: translateY(186%) rotate(45deg);
+}
+
 .p-process-list {
   display: flex;
   width: 100%;
@@ -1125,6 +1137,16 @@ h2(c-title)
   height: 1.25rem;
   border-radius: 50%;
   background-color: #cb0000;
+}
+
+.p-process-list:nth-of-type(1) ::after {
+  content: "";
+  width: 0.1875rem;
+  height: 25.5625rem;
+  background-color: #CB0000;
+  position: absolute;
+  top: 45%;
+  left: -8%;
 }
 
 .p-process-list__title {

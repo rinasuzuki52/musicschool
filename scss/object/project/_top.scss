@@ -412,6 +412,18 @@
     position: relative;
 }
 
+.p-process__lists::before {
+    content: "";
+    width: rem(23);
+    height: rem(23);
+    border-right: rem(3) solid #CB0000;
+    border-bottom: rem(3) solid #CB0000;
+    position: absolute;
+    left: 4.5%;
+    bottom: 6%;
+    transform: translateY(186%) rotate(45deg);
+}
+
 .p-process-list {
     display: flex;
     width: 100%;
@@ -429,6 +441,17 @@
     height: rem(20);
     border-radius: 50%;
     background-color: $main-color;
+}
+
+.p-process-list:nth-of-type(1) ::after {
+    content: "";
+    width: rem(3);
+    height: rem(409);
+    background-color: #CB0000;
+    position: absolute;
+    top: 45%;
+    left: -8%;
+    // transform: translate(-4%, -2%);
 }
 
 .p-process-list__title {
