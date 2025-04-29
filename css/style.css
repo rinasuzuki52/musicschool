@@ -1098,7 +1098,7 @@ h2(c-title)
 }
 
 .p-top__process {
-  margin-block: 2.125rem 3.75rem;
+  margin-top: 2.125rem;
 }
 
 .p-process__lists {
@@ -1165,16 +1165,36 @@ h2(c-title)
 }
 
 .p-top-qa {
-  margin-block: 2.9375rem 1.875rem;
+  margin-top: 6.6875rem;
 }
 
 .p-qa__lists {
   margin-top: 2.25rem;
   width: 100%;
+  border-top: 0.05rem solid #000;
 }
 
 .p-qa-list {
-  border-bottom: solid 0.05rem;
+  border-bottom: 0.05rem solid #000;
+}
+
+.p-qa-list__q::after {
+  content: "";
+  position: absolute;
+  right: 1.25rem;
+  top: 48%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-right: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+  transform-origin: center;
+  /* 鋭角に見せるために横幅を縮める */
+  scale: 0.8 1.1;
+}
+
+.p-qa-list__q.active::after {
+  transform: translateY(-50%) rotate(225deg);
 }
 
 .p-qa-list__q {
@@ -1182,6 +1202,13 @@ h2(c-title)
   position: relative;
   padding-block: 1.25rem 0.9375rem;
   cursor: pointer;
+}
+
+.p-qa-list__a {
+  display: flex;
+  position: relative;
+  padding-block: 1.25rem 0.9375rem;
+  background-color: rgba(203, 0, 0, 0.098);
 }
 
 .p-qa-list__circle {
@@ -1203,6 +1230,23 @@ h2(c-title)
 
 .p-qa-list-circle__a {
   background-color: #cb0000;
+}
+
+.p-qa-list__text {
+  display: flex;
+  align-items: center;
+  padding-left: 0.625rem;
+  font-size: 1.0625rem;
+  line-height: 1.7647058824;
+  font-weight: 600;
+}
+
+.p-qa-list__text-a {
+  color: #cb0000;
+}
+
+.p-top-blog {
+  margin-block: 4.375rem 12.8125rem;
 }
 
 @media (min-width: 768px) {
