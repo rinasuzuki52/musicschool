@@ -367,6 +367,7 @@
 .p-slider__item {
     width: rem(270);
     margin: 0 rem(17.5);
+    // overflow: hidden;
     @include sp {
         width: 100%;
         margin: 0;
@@ -375,13 +376,20 @@
 
 .p-slider__img {
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.p-slider__item:hover {
+    .p-slider__img {
+        transform: scale(1.05);
+    }
 }
 
 .p-slider__name {
     padding-top: rem(17);
     font-size: rem(22);
     line-height: calc(33 / 22);
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: $font-color2;
     @include sp {
@@ -560,7 +568,7 @@
 // ==========================================================================
 
 .p-top-blog {
-    margin-block: rem(70) rem(546);
+    margin-block: rem(70) rem(272);
 }
 
 .p-blog-lists {
