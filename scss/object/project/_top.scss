@@ -402,7 +402,7 @@
 // ==========================================================================
 
 .p-top__process {
-    margin-block: rem(34) rem(60);
+    margin-top: rem(34);
 }
 
 .p-process__lists {
@@ -475,16 +475,36 @@
 // ==========================================================================
 
 .p-top-qa {
-    margin-block: rem(47) rem(30);
+    margin-top: rem(107);
 }
 
 .p-qa__lists {
     margin-top: rem(36);
     width: 100%;
+    border-top: 0.05rem solid $font-color1;
 }
 
 .p-qa-list {
-    border-bottom: solid 0.05rem;
+    border-bottom: 0.05rem solid $font-color1;
+}
+
+.p-qa-list__q::after {
+    content: '';
+    position: absolute;
+    right: rem(20);
+    top: 48%;
+    transform: translateY(-50%) rotate(45deg);
+    width: rem(13);
+    height: rem(13);
+    border-right: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
+    transform-origin: center;
+    /* 鋭角に見せるために横幅を縮める */
+    scale: 0.8 1.1;
+}
+
+.p-qa-list__q.active::after {
+    transform: translateY(-50%) rotate(225deg);
 }
 
 .p-qa-list__q {
@@ -492,6 +512,13 @@
     position: relative;
     padding-block: rem(20) rem(15);
     cursor: pointer;
+}
+
+.p-qa-list__a {
+    display: flex;
+    position: relative;
+    padding-block: rem(20) rem(15);
+    background-color: rgba(203, 0, 0, 0.098);
 }
 
 .p-qa-list__circle {
@@ -513,4 +540,25 @@
 
 .p-qa-list-circle__a {
     background-color: $main-color;
+}
+
+.p-qa-list__text {
+    display: flex;
+    align-items: center;
+    padding-left: rem(10);
+    font-size: rem(17);
+    line-height: calc(30 / 17);
+    font-weight: 600;
+}
+
+.p-qa-list__text-a {
+    color: $main-color;
+}
+
+// ==========================================================================
+// blog
+// ==========================================================================
+
+.p-top-blog {
+    margin-block: rem(70) rem(205);
 }
