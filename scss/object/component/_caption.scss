@@ -1,0 +1,40 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/function' as *; 
+@use '../../foundation/mixin' as *;
+
+/* --------------
+キャプション
+-----------------*/
+
+.c-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: rem(30);
+  width: rem(80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color;
+  color: $font-color2;
+  font-size: rem(15);
+  line-height: calc(25 / 15);
+  z-index: 99;
+}
+
+.p-blog-list__title {
+    padding-top: rem(20);
+    font-size: rem(20);
+    line-height: calc(25 / 20);
+    font-weight: 600;
+}
+
+.p-blog-list__date {
+    display: block;
+    padding-top: rem(11);
+    font-size: rem(17);
+    line-height: calc(30 / 17);
+    text-align: right;
+}
+
+

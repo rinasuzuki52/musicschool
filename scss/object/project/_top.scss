@@ -560,5 +560,27 @@
 // ==========================================================================
 
 .p-top-blog {
-    margin-block: rem(70) rem(205);
+    margin-block: rem(70) rem(546);
 }
+
+.p-blog-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3列に分割
+    margin-top: rem(38);
+    width: 100%;
+    column-gap: rem(50);
+}
+
+.p-blog-list {
+    width: rem(260);
+    transition: 0.3s;
+    position: relative;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.p-blog-list__caption {
+    padding-block: rem(2.5);
+}
+
