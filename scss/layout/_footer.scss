@@ -23,6 +23,11 @@
    line-height: calc(33 / 17);
    font-weight: 600; 
    padding: rem(10);
+   transition: all .4s;
+   cursor: pointer;
+   &:hover {
+    opacity: 0.7;
+   }
 }
 
 .l-footer__logo {
@@ -32,6 +37,10 @@
     width: rem(52);
     padding: rem(10);
     cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .l-footer__copyright {
@@ -51,4 +60,9 @@
 .l-footer__snsbtn a {
     display: inline-block;
     padding: 0 rem(6) rem(6) rem(6);
+    transition: all .4s;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
 }

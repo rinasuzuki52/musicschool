@@ -1,0 +1,36 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/function' as *; 
+@use '../../foundation/mixin' as *;
+
+
+/* --------------
+トップへ戻るボタン
+-----------------*/
+
+.top-back-btn {
+    width: rem(68);
+    height: rem(68);
+    background-color: #7f7f7f;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: fixed;
+    bottom: rem(365);
+    right: rem(116);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    @include sp {
+        bottom: rem(381);
+        right: rem(20);
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.top-back-btn__icon {
+    width: rem(23);
+}
