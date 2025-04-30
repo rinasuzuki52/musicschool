@@ -57,13 +57,22 @@ $(function() {
 });
 
 
-// トップに戻るボタン
+// スクロールボタン
 $(function() {
+  // トップに戻るボタン
   $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
-      $('.top-back-btn').addClass('active');
+      $('.c-back-btn').addClass('active');
     } else {
-      $('.top-back-btn').removeClass('active');
+      $('.c-back-btn').removeClass('active');
+    }
+  });
+  // お問い合わせボタン
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('.c-contact-btn').addClass('active');
+    } else {
+      $('.c-contact-btn').removeClass('active');
     }
   });
 });

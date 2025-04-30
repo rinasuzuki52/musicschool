@@ -439,7 +439,7 @@ img {
 }
 
 .l-footer {
-  padding-block: 2.125rem 2.625rem;
+  padding-block: 2.75rem 2.625rem;
   background-color: #cb0000;
   color: #FFF;
 }
@@ -469,7 +469,7 @@ img {
 
 .l-footer__logo {
   display: block;
-  margin-top: 0.125rem;
+  margin-top: 0.4375rem;
   margin-inline: auto;
   width: 3.25rem;
   padding: 0.625rem;
@@ -736,6 +736,7 @@ img {
 .c-btn {
   color: #FFF;
   background-color: #cb0000;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,7 +802,7 @@ h2(c-title)
 /* --------------
 トップへ戻るボタン
 -----------------*/
-.top-back-btn {
+.c-back-btn {
   width: 4.25rem;
   height: 4.25rem;
   background-color: #7f7f7f;
@@ -817,18 +818,45 @@ h2(c-title)
   transition: all 0.4s;
 }
 @media (max-width: 767px) {
-  .top-back-btn {
+  .c-back-btn {
     bottom: 23.8125rem;
     right: 1.25rem;
   }
 }
-.top-back-btn.active {
+.c-back-btn.active {
   opacity: 1;
   visibility: visible;
 }
 
-.top-back-btn__icon {
+.c-back-btn__icon {
   width: 1.4375rem;
+}
+
+/* --------------
+お問い合わせボタン
+-----------------*/
+.c-contact-btn {
+  padding: 0.8125rem 5.125rem 0.875rem;
+  position: fixed;
+  bottom: 17.125rem;
+  right: 0;
+  font-size: 1.25rem;
+  line-height: 1.65;
+  letter-spacing: 0.13em;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+@media (max-width: 767px) {
+  .c-contact-btn {
+    bottom: 23.8125rem;
+    right: 1.25rem;
+  }
+}
+.c-contact-btn.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .p-top__fv {

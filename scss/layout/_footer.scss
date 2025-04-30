@@ -3,7 +3,7 @@
 @use '../foundation/mixin' as *;
 
 .l-footer {
-    padding-block: rem(34) rem(42);
+    padding-block: rem(44) rem(42);
     background-color: $main-color;
     color: $font-color2;
 }
@@ -32,7 +32,7 @@
 
 .l-footer__logo {
     display: block;
-    margin-top: rem(2);
+    margin-top: rem(7);
     margin-inline: auto;
     width: rem(52);
     padding: rem(10);
