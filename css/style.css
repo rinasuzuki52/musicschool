@@ -460,6 +460,11 @@ img {
   line-height: 1.9411764706;
   font-weight: 600;
   padding: 0.625rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.l-footer-nav__list a:hover {
+  opacity: 0.7;
 }
 
 .l-footer__logo {
@@ -469,6 +474,10 @@ img {
   width: 3.25rem;
   padding: 0.625rem;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.l-footer__logo:hover {
+  opacity: 0.7;
 }
 
 .l-footer__copyright {
@@ -488,6 +497,11 @@ img {
 .l-footer__snsbtn a {
   display: inline-block;
   padding: 0 0.375rem 0.375rem 0.375rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.l-footer__snsbtn a:hover {
+  opacity: 0.7;
 }
 
 .l-header {
@@ -782,6 +796,39 @@ h2(c-title)
   font-size: 1.0625rem;
   line-height: 1.7647058824;
   text-align: right;
+}
+
+/* --------------
+トップへ戻るボタン
+-----------------*/
+.top-back-btn {
+  width: 4.25rem;
+  height: 4.25rem;
+  background-color: #7f7f7f;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  bottom: 22.8125rem;
+  right: 7.25rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+@media (max-width: 767px) {
+  .top-back-btn {
+    bottom: 23.8125rem;
+    right: 1.25rem;
+  }
+}
+.top-back-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.top-back-btn__icon {
+  width: 1.4375rem;
 }
 
 .p-top__fv {

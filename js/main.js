@@ -55,3 +55,16 @@ $(function() {
     }
   });
 });
+
+
+// トップに戻るボタン
+$(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('.top-back-btn').addClass('active');
+    } else {
+      $('.top-back-btn').removeClass('active');
+    }
+  });
+});
+
