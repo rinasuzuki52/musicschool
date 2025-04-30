@@ -434,11 +434,12 @@ a {
 
 img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
 .l-footer {
-  padding-block: 2.125rem 3rem;
+  padding-block: 2.125rem 2.625rem;
   background-color: #cb0000;
   color: #FFF;
 }
@@ -462,13 +463,31 @@ img {
 }
 
 .l-footer__logo {
+  display: block;
   margin-top: 0.125rem;
   margin-inline: auto;
-  width: 2rem;
+  width: 3.25rem;
+  padding: 0.625rem;
+  cursor: pointer;
 }
 
-.l-footer__logo a {
-  cursor: pointer;
+.l-footer__copyright {
+  margin-top: 0.8125rem;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 0.9375rem;
+  line-height: 2.2;
+}
+
+.l-footer__snsbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-footer__snsbtn a {
+  display: inline-block;
+  padding: 0 0.375rem 0.375rem 0.375rem;
 }
 
 .l-header {
