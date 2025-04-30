@@ -422,7 +422,7 @@
 .p-top__process {
     padding-block: rem(34) rem(57);
     @include sp {
-        padding-top: rem(46) rem(25);
+        padding-block: rem(46) rem(25);
     }
 }
 
@@ -433,7 +433,7 @@
     position: relative;
     @include sp {
         margin-top: rem(36);
-        display: block;
+        row-gap: rem(36);
     }
 }
 
@@ -444,34 +444,41 @@
     border-right: rem(3) solid #CB0000;
     border-bottom: rem(3) solid #CB0000;
     position: absolute;
-    left: 4.5%;
+    left: rem(39);
     bottom: 8%;
     transform: translateY(186%) rotate(45deg);
+    @include sp {
+        left: 2%;
+        bottom: 9.2%;
+    }
 }
 
 .p-process-list {
     display: flex;
-    width: 100%;
     margin-left: rem(120);
     position: relative;
     @include sp {
-        row-gap: rem(36);
-        margin-left: rem(48);
         display: block;
-        width: 100%;
+        margin-left: rem(48);
+        max-width: rem(287);
     }
 }
 
 .p-process-list::before {
     content: "";
     position: absolute;
-    left: -9%;
+    left:-10.5%;
     top:50%;
     transform: translateY(-70%);
     width: rem(20);
     height: rem(20);
     border-radius: 50%;
     background-color: $main-color;
+    @include sp {
+        left: -14%;
+        top: 17%;
+        transform: translateY(-50%);
+    }
 }
 
 .p-process-list:nth-of-type(1) ::after {
@@ -481,8 +488,14 @@
     background-color: #CB0000;
     position: absolute;
     top: 66%;
-    left: -8%;
+    left:rem(-70.5);
     transform: translate(-4%, -2%);
+    @include sp {
+        height: rem(674);
+        top: 24%;
+        left: -11%;
+        transform: translate(0%, 0%);
+    }
 }
 
 .p-process-list__title {
@@ -492,9 +505,6 @@
     line-height: calc(33 / 22);
     color: $main-color;
     font-weight: 600;
-    @include sp {
-        width: 100%;
-    }
 }
 
 .p-process-list__text {
@@ -516,7 +526,7 @@
 .p-top-qa {
     padding-block: rem(50);
     @include sp {
-        padding-block: rem(30);
+        padding-block: rem(30) rem(20);
     }
 }
 
@@ -524,6 +534,9 @@
     margin-top: rem(36);
     width: 100%;
     border-top: 0.05rem solid $font-color1;
+    @include sp {
+        margin-top: rem(39);
+    }
 }
 
 .p-qa-list {
@@ -554,6 +567,9 @@
     position: relative;
     padding-block: rem(20) rem(15);
     cursor: pointer;
+    @include sp {
+        padding-block: rem(17) rem(9);
+    }
 }
 
 .p-qa-list__a {
@@ -561,6 +577,9 @@
     position: relative;
     padding-block: rem(20) rem(15);
     background-color: rgba(203, 0, 0, 0.098);
+    @include sp {
+        padding-block: rem(17) rem(9);
+    }
 }
 
 .p-qa-list__circle {
@@ -574,6 +593,9 @@
     justify-content: center;
     align-items: center;
     margin-left: rem(19.5);
+    @include sp {
+        margin-left: rem(0);
+    }
 }
 
 .p-qa-list-circle__q {
@@ -591,10 +613,20 @@
     font-size: rem(17);
     line-height: calc(30 / 17);
     font-weight: 600;
+    @include sp {
+        padding-left: rem(20);
+        font-size: rem(16);
+        line-height: calc(30 / 16);
+        max-width: rem(253);
+        font-weight: 500;
+    }
 }
 
 .p-qa-list__text-a {
     color: $main-color;
+    @include sp {
+        font-weight: 600;
+    }
 }
 
 // ==========================================================================
@@ -602,7 +634,7 @@
 // ==========================================================================
 
 .p-top-blog {
-    margin-block: rem(70) rem(272);
+    margin-block: rem(70) rem(191);
 }
 
 .p-blog-lists {
@@ -611,6 +643,12 @@
     margin-top: rem(38);
     width: 100%;
     column-gap: rem(50);
+    @include sp {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: rem(39);
+        column-gap: rem(0);
+        row-gap: rem(41);
+    }
 }
 
 .p-blog-list {
@@ -620,9 +658,50 @@
     &:hover {
         opacity: 0.5;
     }
+    @include sp {
+        width: 100%;
+    }
+}
+
+.p-blog-list__title {
+    padding-top: rem(20);
+    font-size: rem(20);
+    line-height: calc(25 / 20);
+    font-weight: 600;
+    @include sp {
+        padding-top: rem(30);
+        line-height: calc((30 /20));
+    }
+}
+
+.p-blog-list__date {
+    display: block;
+    padding-top: rem(11);
+    font-size: rem(17);
+    line-height: calc(30 / 17);
+    text-align: right;
+    @include sp {
+        padding-top: rem(6);
+    }
 }
 
 .p-blog-list__caption {
     padding-block: rem(2.5);
 }
 
+.p-blog__link {
+    display: flex;
+    width:rem(108);
+    margin-top: rem(37);
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+    border-bottom: 0.05rem solid;
+    transition: all .4s;
+    cursor: pointer;
+    &:hover {
+    opacity: 0.7;
+  }
+}
