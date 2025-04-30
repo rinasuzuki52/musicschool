@@ -6,6 +6,9 @@
     padding-block: rem(44) rem(42);
     background-color: $main-color;
     color: $font-color2;
+    @include sp {
+        padding-block: rem(44) rem(45);
+    }
 }
 
 .l-footer-nav {
@@ -16,6 +19,9 @@
 .l-footer-nav__lists {
     display: flex;
     column-gap: rem(12);
+    @include sp {
+        column-gap: rem(9);
+    }
 }
 
 .l-footer-nav__list a {
@@ -38,6 +44,10 @@
     padding: rem(10);
     cursor: pointer;
     transition: all .4s;
+    @include sp {
+        margin-top: 0;
+        padding: rem(8.7);
+    }
     &:hover {
         opacity: 0.7;
     }
@@ -49,12 +59,19 @@
     text-align: center;
     font-size: rem(15);
     line-height: calc(33 / 15);
+    @include sp {
+        margin-top:  rem(10);
+        line-height: calc(20 / 15);
+    }
 }
 
 .l-footer__snsbtn {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sp {
+        margin-top: rem(10);
+    }
 }
 
 .l-footer__snsbtn a {
@@ -62,6 +79,9 @@
     padding: 0 rem(6) rem(6) rem(6);
     transition: all .4s;
     cursor: pointer;
+    @include sp {
+        padding: rem(6);
+    }
     &:hover {
         opacity: 0.7;
     }
