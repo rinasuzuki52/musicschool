@@ -14,7 +14,7 @@ $(function() {
 
 // スライダー
 $(document).ready(function(){
-    $('.p-slider__items').slick({
+    $('.p-voice-slider__cards').slick({
       slidesToShow: 3,       // 横に3枚表示
       slidesToScroll: 1,     // 1枚ずつスライド
       arrows: false,         // デフォルト矢印を非表示
@@ -30,12 +30,12 @@ $(document).ready(function(){
     });
   
     // カスタム矢印で操作
-    $('.p-slider__arrow-l').on('click', function() {
-      $('.p-slider__items').slick('slickPrev');
+    $('.p-voice-slider__arrow-l').on('click', function() {
+      $('.p-voice-slider__cards').slick('slickPrev');
     });
   
-    $('.p-slider__arrow-r').on('click', function() {
-      $('.p-slider__items').slick('slickNext');
+    $('.p-voice-slider__arrow-r').on('click', function() {
+      $('.p-voice-slider__cards').slick('slickNext');
     });
   });
   
