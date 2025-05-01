@@ -576,7 +576,7 @@ img {
   transition: 0.3s;
 }
 .l-header__logo:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media (max-width: 767px) {
   .l-header__logo {
@@ -668,7 +668,7 @@ img {
   transition: 0.3s;
 }
 .l-header__nav__list:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media (max-width: 767px) {
   .l-header__nav__list {
@@ -1333,8 +1333,8 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .p-process__lists::before {
-    left: 2%;
-    bottom: 9.2%;
+    left: 0.4375rem;
+    bottom: 4.875rem;
   }
 }
 
@@ -1364,8 +1364,8 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .p-process-list::before {
-    left: -14%;
-    top: 17%;
+    left: -2.5rem;
+    top: 1.5625rem;
     transform: translateY(-50%);
   }
 }
@@ -1383,8 +1383,8 @@ h2(c-title)
 @media (max-width: 767px) {
   .p-process-list:nth-of-type(1) ::after {
     height: 42.125rem;
-    top: 24%;
-    left: -11%;
+    top: 1.5625rem;
+    left: -1.9375rem;
     transform: translate(0%, 0%);
   }
 }
