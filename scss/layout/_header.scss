@@ -30,7 +30,7 @@
     }
 }
 
-.l-header__logo {
+.l-header-logo {
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,14 +44,14 @@
     }
 }
 
-.l-header__logo__image {
+.l-header-logo__image {
     width: rem(32);
     @include sp {
         width: rem(21);
     }
 }
 
-.l-header__logo__text {
+.l-header-logo__text {
     font-size: rem(20);
     font-weight: 700;
     line-height: calc(23 / 20);
@@ -103,7 +103,7 @@
     }
 }
 
-.l-header__nav__list {
+.l-header-nav__list {
     height: 100%;
     display: flex;
     padding-inline: rem(10);
@@ -138,17 +138,17 @@
 
 
 @include pc {
-    .l-header__nav__list::after {
+    .l-header-nav__list::after {
         content: "";
         position: absolute;
         left: 50%;
-        bottom: rem(25);
+        bottom: rem(3);
         width: 0;
         height: rem(2);
         background-color: $font-color1;
         transition: width 0.3s ease, left 0.3s ease;
     }
-    .l-header__nav__list:hover::after {
+    .l-header-nav__list:hover::after {
         width: 100%;
         left: 0;
     }
