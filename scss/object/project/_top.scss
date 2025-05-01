@@ -448,8 +448,8 @@
     bottom: 8%;
     transform: translateY(186%) rotate(45deg);
     @include sp {
-        left: 2%;
-        bottom: 9.2%;
+        left: rem(7);
+        bottom: rem(78);
     }
 }
 
@@ -467,7 +467,7 @@
 .p-process-list::before {
     content: "";
     position: absolute;
-    left:-10.5%;
+    left: -10.5%;
     top:50%;
     transform: translateY(-70%);
     width: rem(20);
@@ -475,8 +475,8 @@
     border-radius: 50%;
     background-color: $main-color;
     @include sp {
-        left: -14%;
-        top: 17%;
+        left: rem(-40);
+        top: rem(25);
         transform: translateY(-50%);
     }
 }
@@ -492,8 +492,8 @@
     transform: translate(-4%, -2%);
     @include sp {
         height: rem(674);
-        top: 24%;
-        left: -11%;
+        top: rem(25);
+        left: rem(-31);
         transform: translate(0%, 0%);
     }
 }
