@@ -431,6 +431,10 @@
     padding-left: rem(81);
     padding-bottom: rem(16);
     position: relative;
+    @include sp {
+        margin-top: rem(32);
+        padding-left: rem(8);
+    }
 }
 
 .p-process__lists::before {
@@ -439,10 +443,30 @@
     display: block;
     top: rem(25);
     bottom: 0;
-    left: 6rem;
+    left: rem(91);
     translate: -50%;
-    width: 0.2rem;
+    width: rem(3);
     background-color: $main-color;
+    @include sp {
+        top: rem(20);
+        left: rem(18);
+    }
+}
+
+.p-process__lists::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: rem(91);
+    transform-origin: left bottom;
+    rotate: -45deg;
+    width: rem(20);
+    height: rem(20);
+    border-left: rem(3) solid $main-color;
+    border-bottom: rem(3) solid $main-color;
+    @include sp {
+        left: rem(18);
+    }
 }
 
 
@@ -451,13 +475,15 @@
     align-items: flex-start;
     column-gap: rem(38);
     position: relative;
-   .p-flow__item:nth-of-type(n + 2) {
     margin-top: 5.8rem;
-}
+    @include sp {
+        display: block;
+        column-gap: rem(0);
+    }
 }
 
-.p-flow__item:nth-of-type(n + 2) {
-    margin-top: 5.8rem;
+.p-process__list:nth-of-type(n + 2) {
+    margin-top: rem(58);
 }
 
 .p-process-list__title {
@@ -470,13 +496,29 @@
     font-weight: 600;
     gap: rem(50);
     margin-top: rem(10);
+    @include sp {
+        margin-top: rem(5);
+        gap: rem(20);
+    }
+}
+
+.p-process-list__title::before {
+    content: "";
+    display: block;
+    width: rem(20);
+    height: rem(20);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: $main-color;
 }
 
 .p-process-list__text {
+    flex: 1;
     font-size: rem(18);
     line-height: calc(30 / 18);
     font-weight: 500;
     @include sp {
+        padding-left: rem(40);
         margin-top: rem(9);
         font-size: rem(16);
         line-height: calc(30 / 16);
