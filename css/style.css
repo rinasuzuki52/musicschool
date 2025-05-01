@@ -622,14 +622,14 @@ img {
   align-items: center;
 }
 
-.l-header__nav {
+.l-header-nav__lists {
   height: 100%;
   display: flex;
   -moz-column-gap: 0.8125rem;
        column-gap: 0.8125rem;
 }
 @media (max-width: 767px) {
-  .l-header__nav {
+  .l-header-nav__lists {
     display: block;
     width: 18.75rem;
     height: 10.875rem;
@@ -641,15 +641,15 @@ img {
   }
 }
 
-.l-header__nav.active {
+.l-header-nav__lists.active {
   right: 0%;
 }
 
-.l-header__nav li {
+.l-header-nav__lists li {
   height: 100%;
 }
 @media (max-width: 767px) {
-  .l-header__nav li {
+  .l-header-nav__lists li {
     display: block;
     height: 3.625rem;
   }
