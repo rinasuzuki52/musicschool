@@ -75,7 +75,7 @@
     align-items: center;
 }
 
-.l-header__nav {
+.l-header-nav__lists {
     height: 100%;
     display: flex;
     column-gap: rem(13);
@@ -90,12 +90,12 @@
         transition: all .5s;
     }
 }
-.l-header__nav.active {
+.l-header-nav__lists.active {
     right: 0%;
 }
 
 
-.l-header__nav li {
+.l-header-nav__lists li {
     height: 100%;
     @include sp {
         display: block;
