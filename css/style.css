@@ -1347,7 +1347,7 @@ h2(c-title)
   .p-process-list {
     display: block;
     margin-left: 3rem;
-    max-width: 17.9375rem;
+    width: 85.6%;
   }
 }
 
@@ -1517,8 +1517,8 @@ h2(c-title)
     padding-left: 1.25rem;
     font-size: 1rem;
     line-height: 1.875;
-    max-width: 15.8125rem;
     font-weight: 500;
+    width: 75.2%;
   }
 }
 
