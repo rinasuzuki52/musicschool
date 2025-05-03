@@ -34,7 +34,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: rem(10);
     transition: 0.3s;
     &:hover {
         opacity: 0.5;
@@ -55,7 +55,7 @@
     font-size: rem(20);
     font-weight: 700;
     line-height: calc(23 / 20);
-    padding-top: 0.4rem;
+    padding-top: rem(4);
     text-align: left;
     @include sp {
         font-size: rem(13);
@@ -157,7 +157,7 @@
 
 .l-header__btn {
     margin-left: rem(23);
-    padding: rem(7) rem(30) rem(5) rem(30);
+    padding: rem(5) rem(29) rem(5) rem(29);
     font-size: rem(15);
     line-height: calc(33 / 15);
     font-weight: 700;

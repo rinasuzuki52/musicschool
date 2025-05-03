@@ -60,7 +60,7 @@
 // ==========================================================================
 
 .p-top-concept {
-    padding-block: rem(66) rem(55);
+    padding-block: rem(66) rem(47);
     background-color: $font-color2;
     @include sp {
         padding-block: rem(46) rem(34) ;
@@ -100,11 +100,12 @@
 
 .p-concept-flow {
     width: 100%;
+    margin-top: rem(12);
 }
 
 .p-concept-flow__card {
     width: 100%;
-    margin-block: rem(8.5);
+    padding-block: rem(8.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,9 +164,9 @@
         position: absolute;
         width: rem(24);
         height: rem(24);
-        border-top: rem(4) solid #CB0000;
-        border-left: rem(4) solid #CB0000;
-        top: -50%;
+        border-top: rem(3) solid #CB0000;
+        border-left: rem(3) solid #CB0000;
+        top: -47%;
         left: -0.1rem;
         transform: translateY(-134%) rotate(45deg);
         @include sp {
@@ -182,7 +183,7 @@
             content: "";
             position: absolute;
             width: rem(3);
-            height: rem(178);
+            height: rem(194);
             background-color: #CB0000;
             top: 0%;
             left: 50%;
@@ -293,7 +294,7 @@
 
 .p-reason-card__title {
     padding-left: rem(50);
-    padding-bottom: rem(12);
+    padding-bottom: rem(8);
     font-size: rem(22);
     line-height: calc(33 / 22);
     font-weight: 600;
@@ -332,12 +333,17 @@
     }
 }
 
+.p-top-voice__inner {
+    padding-inline: rem(0);
+}
+
 .p-top-voice__title {
     color: $font-color2;
 }
 
 .p-voice-slider {
     margin-top: rem(36);
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -348,7 +354,7 @@
 
 .p-voice-slider__arrow-l,.p-voice-slider__arrow-r {
       position: absolute;
-      top: 50%;
+      top: 40%;
       transform: translateY(-50%);
       z-index: 1;
       width: rem(30);
@@ -371,13 +377,12 @@
 }
 
 .p-voice-slider__cards {
-    width: 100%;
+    width: rem(880);
 }
 
 .p-slider-card {
-    width: rem(270);
-    margin: 0 rem(17.5);
-    // overflow: hidden;
+    width: rem(270) !important;
+    margin-inline: rem(17.5);
     @include sp {
         width: 100%;
         margin: 0;

@@ -571,8 +571,8 @@ img {
   height: 100%;
   display: flex;
   align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
   transition: 0.3s;
 }
 .l-header-logo:hover {
@@ -598,7 +598,7 @@ img {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.15;
-  padding-top: 0.4rem;
+  padding-top: 0.25rem;
   text-align: left;
 }
 @media (max-width: 767px) {
@@ -703,7 +703,7 @@ img {
 }
 .l-header__btn {
   margin-left: 1.4375rem;
-  padding: 0.4375rem 1.875rem 0.3125rem 1.875rem;
+  padding: 0.3125rem 1.8125rem 0.3125rem 1.8125rem;
   font-size: 0.9375rem;
   line-height: 2.2;
   font-weight: 700;
@@ -931,7 +931,7 @@ h2(c-title)
 }
 
 .p-top-concept {
-  padding-block: 4.125rem 3.4375rem;
+  padding-block: 4.125rem 2.9375rem;
   background-color: #FFF;
 }
 @media (max-width: 767px) {
@@ -979,11 +979,12 @@ h2(c-title)
 
 .p-concept-flow {
   width: 100%;
+  margin-top: 0.75rem;
 }
 
 .p-concept-flow__card {
   width: 100%;
-  margin-block: 0.53125rem;
+  padding-block: 0.54375rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1045,9 +1046,9 @@ h2(c-title)
   position: absolute;
   width: 1.5rem;
   height: 1.5rem;
-  border-top: 0.25rem solid #CB0000;
-  border-left: 0.25rem solid #CB0000;
-  top: -50%;
+  border-top: 0.1875rem solid #CB0000;
+  border-left: 0.1875rem solid #CB0000;
+  top: -47%;
   left: -0.1rem;
   transform: translateY(-134%) rotate(45deg);
 }
@@ -1062,7 +1063,7 @@ h2(c-title)
   content: "";
   position: absolute;
   width: 0.1875rem;
-  height: 11.125rem;
+  height: 12.125rem;
   background-color: #CB0000;
   top: 0%;
   left: 50%;
@@ -1167,7 +1168,7 @@ h2(c-title)
 
 .p-reason-card__title {
   padding-left: 3.125rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
   font-size: 1.375rem;
   line-height: 1.5;
   font-weight: 600;
@@ -1208,12 +1209,17 @@ h2(c-title)
   }
 }
 
+.p-top-voice__inner {
+  padding-inline: 0rem;
+}
+
 .p-top-voice__title {
   color: #FFF;
 }
 
 .p-voice-slider {
   margin-top: 2.25rem;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -1226,7 +1232,7 @@ h2(c-title)
 
 .p-voice-slider__arrow-l, .p-voice-slider__arrow-r {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 1;
   width: 1.875rem;
@@ -1253,12 +1259,12 @@ h2(c-title)
 }
 
 .p-voice-slider__cards {
-  width: 100%;
+  width: 55rem;
 }
 
 .p-slider-card {
-  width: 16.875rem;
-  margin: 0 1.09375rem;
+  width: 16.875rem !important;
+  margin-inline: 1.09375rem;
 }
 @media (max-width: 767px) {
   .p-slider-card {
