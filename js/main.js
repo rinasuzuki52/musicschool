@@ -14,30 +14,52 @@ $(function() {
 
 // スライダー
 $(document).ready(function(){
-    $('.p-voice-slider__cards').slick({
-      slidesToShow: 3,       // 横に3枚表示
-      slidesToScroll: 1,     // 1枚ずつスライド
-      arrows: false,         // デフォルト矢印を非表示
-      infinite: true,        // ループするように
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1   // スマホは1枚表示
-          }
+  $('.p-voice-slider__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    prevArrow: '<img src="images/top/arrow-l.svg" class="slick-prev" alt="前へ">',
+    nextArrow: '<img src="images/top/arrow-r.svg" class="slick-next" alt="次へ">',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
         }
-      ]
-    });
-  
-    // カスタム矢印で操作
-    $('.p-voice-slider__arrow-l').on('click', function() {
-      $('.p-voice-slider__cards').slick('slickPrev');
-    });
-  
-    $('.p-voice-slider__arrow-r').on('click', function() {
-      $('.p-voice-slider__cards').slick('slickNext');
-    });
+      }
+    ]
   });
+});
+
+
+// $(document).ready(function(){
+//     $('.p-voice-slider').slick({
+//       slidesToShow: 3,       // 横に3枚表示
+//       slidesToScroll: 1,     // 1枚ずつスライド
+//       arrows: true,         // デフォルト矢印を非表示
+//       infinite: true,        // ループするように
+//       responsive: [
+//         {
+//           breakpoint: 768,
+//           settings: {
+//             slidesToShow: 1   // スマホは1枚表示
+//           }
+//         }
+//       ]
+//     });
+  
+//     // カスタム矢印で操作
+//     $('.p-voice-slider__arrow-l').on('click', function() {
+//       $('.p-voice-slider__cards').slick('slickPrev');
+//     });
+  
+//     $('.p-voice-slider__arrow-r').on('click', function() {
+//       $('.p-voice-slider__cards').slick('slickNext');
+//     });
+//   });
   
 //TOPアコーディオン
 $(function() {

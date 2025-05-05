@@ -15,14 +15,17 @@
     display: grid;
     place-content: center;
     position: fixed;
-    bottom: rem(365);
+    bottom: rem(369);
     right: rem(116);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    transition: all .4s;
+    transition: all .3s;
+    &:hover {
+        opacity: 0.5;
+    }
     @include sp {
-        bottom: rem(381);
+        bottom: rem(390);
         right: rem(20);
     }
     &.active {
@@ -32,5 +35,5 @@
 }
 
 .c-back-btn__icon {
-    width: rem(23);
+    width: rem(27);
 }
