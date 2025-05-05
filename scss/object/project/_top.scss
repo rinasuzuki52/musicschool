@@ -66,7 +66,7 @@
     padding-block: rem(66) rem(47);
     background-color: $font-color2;
     @include sp {
-        padding-block: rem(46) rem(34) ;
+        padding-block: rem(46) rem(28) ;
     }
 }
 
@@ -105,7 +105,7 @@
     width: 100%;
     margin-top: rem(12);
     @include sp {
-
+        margin-top: rem(25);
     }
 }
 
@@ -141,11 +141,6 @@
     border-radius: 50%;
     margin-inline: rem(30);
     position: relative;
-    @include sp {
-        width: rem(20);
-        height: rem(20);
-        margin-inline: rem(30);
-    }
 }
 
 .p-concept-flow__card__ja {
@@ -175,10 +170,6 @@
         top: -47%;
         left: -0.1rem;
         transform: translateY(-134%) rotate(45deg);
-        @include sp {
-            border-top: rem(3) solid #CB0000;
-            border-left: rem(3) solid #CB0000;
-        }
       }
     }
 }
@@ -206,7 +197,7 @@
             position: absolute;
             width: rem(24);
             height: rem(24);
-            top: -50%;
+            top: -47%;
             left: rem(-2);
             transform: translateY(-134%) rotate(45deg)
           }
@@ -218,7 +209,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                height: rem(178);
+                height: rem(194);
                 background-color: #CB0000;
                 top: 0%;
                 left: 50%;
@@ -308,7 +299,7 @@
     @include sp {
         padding-left: 0;
         padding-top: rem(30);
-        padding-bottom: rem(10);
+        padding-bottom: rem(8);
         font-size: rem(20);
         line-height: calc(30 / 20);
     }
@@ -335,12 +326,15 @@
     padding-block: rem(44) rem(67);
     background-color: $main-color;
     @include sp {
-        padding-block: rem(45) rem(30);
+        padding-block: rem(45) rem(61);
     }
 }
 
 .p-top-voice__inner {
     padding-inline: rem(0);
+    @include sp {
+        padding-inline: rem(20);
+    }
 }
 
 .p-top-voice__title {
@@ -353,6 +347,9 @@
     height: auto;
     padding: rem(40) rem(10) rem(10) rem(10);
     margin: 0 auto;
+    @include sp {
+        padding: rem(39) rem(0) rem(0) rem(0);
+    }
 }
 
 .p-voice-slider {
@@ -362,6 +359,9 @@
     display: block;
     align-items: center;
     overflow: hidden;
+    @include sp {
+       max-height: none;
+    }
 }
 
 .p-voice-slider__arrow-l,.p-voice-slider__arrow-r {
@@ -390,6 +390,9 @@
 
 .p-voice-slider__cards {
     width: rem(880);
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-slider-card {
@@ -397,7 +400,7 @@
     margin-inline: rem(17.5);
     @include sp {
         width: 100%;
-        margin: 0;
+        margin-inline: 0;
     }
 }
 
@@ -449,8 +452,9 @@
     padding-bottom: rem(16);
     position: relative;
     @include sp {
-        margin-top: rem(32);
+        margin-top: rem(36);
         padding-left: rem(8);
+        padding-bottom: rem(0);
     }
 }
 
@@ -467,6 +471,7 @@
     @include sp {
         top: rem(20);
         left: rem(18);
+        bottom: rem(10);
     }
 }
 
@@ -477,12 +482,13 @@
     left: rem(60);
     transform-origin: left bottom;
     rotate: -45deg;
-    width: rem(20);
-    height: rem(20);
+    width: rem(24);
+    height: rem(24);
     border-left: rem(3) solid $main-color;
     border-bottom: rem(3) solid $main-color;
     @include sp {
         left: rem(18);
+        bottom: rem(8);
     }
 }
 
@@ -500,6 +506,9 @@
 
 .p-process-list:nth-of-type(n + 2) {
     margin-top: rem(58);
+    @include sp {
+        margin-top: rem(36);
+    }
 }
 
 .p-process-list__title {
@@ -558,7 +567,7 @@
     width: 100%;
     border-top: 0.05rem solid $font-color1;
     @include sp {
-        margin-top: rem(39);
+        margin-top: rem(38);
     }
 }
 
@@ -579,6 +588,8 @@
     transform-origin: center;
     /* 鋭角に見せるために横幅を縮める */
     scale: 0.8 1.1;
+    right: rem(15);
+    top: 50%;
 }
 
 .p-qa-list__q.active::after {
@@ -618,6 +629,7 @@
     margin-left: rem(19.5);
     @include sp {
         margin-left: rem(0);
+        align-self: center;
     }
 }
 
@@ -657,7 +669,7 @@
 // ==========================================================================
 
 .p-top-blog {
-    padding-block: rem(17) rem(191);
+    padding-block: rem(24) rem(191);
 }
 
 .p-blog-cards {

@@ -20,6 +20,9 @@
   font-size: rem(15);
   line-height: calc(25 / 15);
   z-index: 99;
+  @include sp {
+    width: rem(90);
+  }
 }
 
 
