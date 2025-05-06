@@ -609,8 +609,10 @@
     transform-origin: center;
     /* 鋭角に見せるために横幅を縮める */
     scale: 0.8 1.1;
+    @include sp {
     right: rem(15);
     top: 50%;
+    }   
 }
 
 .p-qa-list__q.active::after {
@@ -690,7 +692,10 @@
 // ==========================================================================
 
 .p-top-blog {
-    padding-block: rem(17) rem(210);
+    padding-block: rem(16) rem(191);
+    @include sp {
+        padding-block: rem(24) rem(196);
+    }
 }
 
 .p-blog-cards {
@@ -745,11 +750,18 @@
     padding-block: rem(2.5);
 }
 
-.p-top-blog__link {
+.p-top-blog__more {
     display: flex;
-    margin-left: auto;
-    width:rem(108);
+    justify-content: flex-end;
+    width:100%;
     margin-top: rem(44);
+    @include sp {
+        margin-top: rem(43);
+        justify-content: center;
+    }
+}
+
+.p-top-blog__link {
     font-size: rem(18);
     line-height: calc(18 / 18);
     border-bottom: 0.05rem solid;
@@ -757,5 +769,6 @@
     cursor: pointer;
     &:hover {
     opacity: 0.7;
-  }
+    }
+
 }

@@ -1516,8 +1516,12 @@ h2(c-title)
   transform-origin: center;
   /* 鋭角に見せるために横幅を縮める */
   scale: 0.8 1.1;
-  right: 0.9375rem;
-  top: 50%;
+}
+@media (max-width: 767px) {
+  .p-qa-list__q::after {
+    right: 0.9375rem;
+    top: 50%;
+  }
 }
 
 .p-qa-list__q.active::after {
@@ -1603,7 +1607,12 @@ h2(c-title)
 }
 
 .p-top-blog {
-  padding-block: 1.0625rem 13.125rem;
+  padding-block: 1rem 11.9375rem;
+}
+@media (max-width: 767px) {
+  .p-top-blog {
+    padding-block: 1.5rem 12.25rem;
+  }
 }
 
 .p-blog-cards {
@@ -1668,11 +1677,20 @@ h2(c-title)
   padding-block: 0.15625rem;
 }
 
-.p-top-blog__link {
+.p-top-blog__more {
   display: flex;
-  margin-left: auto;
-  width: 6.75rem;
+  justify-content: flex-end;
+  width: 100%;
   margin-top: 2.75rem;
+}
+@media (max-width: 767px) {
+  .p-top-blog__more {
+    margin-top: 2.6875rem;
+    justify-content: center;
+  }
+}
+
+.p-top-blog__link {
   font-size: 1.125rem;
   line-height: 1;
   border-bottom: 0.05rem solid;
