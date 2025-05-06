@@ -70,11 +70,11 @@ $(document).ready(function () {
 
       // ボタンをゆっくり表示/非表示
       if (scrollTop > 100) {
-          btn.fadeIn(600); // 表示速度を600ミリ秒に設定
-          topArrow.fadeIn(600); // 表示速度を600ミリ秒に設定
+          btn.fadeIn(500); // 表示速度を600ミリ秒に設定
+          topArrow.fadeIn(500); // 表示速度を600ミリ秒に設定
       } else {
-          btn.fadeOut(600); // 非表示速度を600ミリ秒に設定
-          topArrow.fadeOut(600); // 非表示速度を600ミリ秒に設定
+          btn.fadeOut(500); // 非表示速度を600ミリ秒に設定
+          topArrow.fadeOut(500); // 非表示速度を600ミリ秒に設定
       }
 
       // フッター手前で位置を変える
@@ -102,7 +102,7 @@ $(document).ready(function () {
               });
               topArrow.css({
                   position: 'fixed',
-                  bottom: 'calc(0px + 31px + 50px)',
+                  bottom: (31 + 50) + 'px',
               });
           } else { // btnが存在しない場合
               topArrow.css({
