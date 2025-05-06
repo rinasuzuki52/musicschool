@@ -8,29 +8,23 @@
 -----------------*/
 
 .c-back-btn {
+    display: grid;
     width: rem(68);
     height: rem(68);
     background-color: #7f7f7f;
     border-radius: 50%;
-    display: grid;
     place-content: center;
-    position: fixed;
-    bottom: rem(369);
     right: rem(116);
     z-index: 999;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    cursor: pointer;
     transition: all .3s;
     &:hover {
         opacity: 0.5;
     }
     @include sp {
-        bottom: rem(390);
+        height: rem(55);
         right: rem(20);
-    }
-    &.active {
-        opacity: 1;
-        visibility: visible;
     }
 }
 
