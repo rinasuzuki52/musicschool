@@ -489,8 +489,7 @@ img {
 }
 @media (max-width: 767px) {
   .l-footer__logo {
-    margin-top: 0;
-    padding: 0.54375rem;
+    margin-top: 0.5625rem;
   }
 }
 .l-footer__logo:hover {
@@ -506,7 +505,7 @@ img {
 }
 @media (max-width: 767px) {
   .l-footer__copyright {
-    margin-top: 0.625rem;
+    margin-top: 1.1875rem;
     line-height: 1.3333333333;
   }
 }
@@ -877,8 +876,13 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .c-contact-btn {
-    bottom: 23.8125rem;
-    right: 1.25rem;
+    padding: 0.8125rem 6.3125rem 0.875rem 6.125rem;
+    bottom: 19rem;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 20.9375rem;
+    white-space: nowrap;
   }
 }
 .c-contact-btn.active {

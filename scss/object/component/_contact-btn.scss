@@ -21,8 +21,13 @@
     visibility: hidden;
     transition: all .4s;
     @include sp {
-        bottom: rem(381);
-        right: rem(20);
+        padding: rem(13) rem(101) rem(14) rem(98);
+        bottom: rem(304);
+        left: 50%;
+        right: auto; // 右固定を解除
+        transform: translateX(-50%);
+        width: rem(335);
+        white-space: nowrap;
     }
     &.active {
         opacity: 1;
