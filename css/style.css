@@ -1438,7 +1438,7 @@ h2(c-title)
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #cb0000;
-  align-items: center;
+  align-self: center;
 }
 
 .p-process-list__text {
