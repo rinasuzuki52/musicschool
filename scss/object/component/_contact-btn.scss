@@ -7,8 +7,6 @@
 -----------------*/
 
 .c-contact-btn {
-    // display: grid;
-    // place-content: center;
     padding: rem(16) rem(81) rem(10);
     position: fixed;
     bottom: rem(278);
@@ -17,8 +15,6 @@
     line-height: calc(33 / 20);
     letter-spacing: 0.13em;
     z-index: 999;
-    opacity: 0;
-    visibility: hidden;
     transition: all .4s;
     @include sp {
         padding: rem(13) rem(101) rem(14) rem(98);
@@ -28,9 +24,5 @@
         transform: translateX(-50%);
         width: rem(335);
         white-space: nowrap;
-    }
-    &.active {
-        opacity: 1;
-        visibility: visible;
     }
 }

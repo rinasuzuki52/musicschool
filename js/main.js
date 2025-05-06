@@ -35,31 +35,6 @@ $(document).ready(function(){
 });
 
 
-// $(document).ready(function(){
-//     $('.p-voice-slider').slick({
-//       slidesToShow: 3,       // 横に3枚表示
-//       slidesToScroll: 1,     // 1枚ずつスライド
-//       arrows: true,         // デフォルト矢印を非表示
-//       infinite: true,        // ループするように
-//       responsive: [
-//         {
-//           breakpoint: 768,
-//           settings: {
-//             slidesToShow: 1   // スマホは1枚表示
-//           }
-//         }
-//       ]
-//     });
-  
-//     // カスタム矢印で操作
-//     $('.p-voice-slider__arrow-l').on('click', function() {
-//       $('.p-voice-slider__cards').slick('slickPrev');
-//     });
-  
-//     $('.p-voice-slider__arrow-r').on('click', function() {
-//       $('.p-voice-slider__cards').slick('slickNext');
-//     });
-//   });
   
 //TOPアコーディオン
 $(function() {
@@ -81,21 +56,68 @@ $(function() {
 
 // スクロールボタン
 $(function() {
-  // トップに戻るボタン
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
-      $('.c-back-btn').addClass('active');
-    } else {
-      $('.c-back-btn').removeClass('active');
-    }
+$(document).ready(function () {
+  var btn = $('.c-contact-btn');
+  var topArrow = $('.c-back-btn');
+  var footer = $('.l-footer');
+
+  $(window).on('scroll', function () {
+      var scrollTop = $(this).scrollTop();
+      var windowHeight = $(window).height();
+      var footerTop = footer.offset().top;
+      var btnHeight = btn.length ? btn.outerHeight() : 0; // btnが存在する場合のみ高さを取得
+      var bottomSpace = 30; // topArrowをフッターの上30pxに設定
+
+      // ボタンをゆっくり表示/非表示
+      if (scrollTop > 100) {
+          btn.fadeIn(600); // 表示速度を600ミリ秒に設定
+          topArrow.fadeIn(600); // 表示速度を600ミリ秒に設定
+      } else {
+          btn.fadeOut(600); // 非表示速度を600ミリ秒に設定
+          topArrow.fadeOut(600); // 非表示速度を600ミリ秒に設定
+      }
+
+      // フッター手前で位置を変える
+      if (scrollTop + windowHeight > footerTop - bottomSpace) {
+          if (btn.length) { // btnが存在する場合
+              btn.css({
+                  position: 'absolute',
+                  bottom: windowHeight - footerTop + 'px', // フッターに0pxで配置
+              });
+              topArrow.css({
+                  position: 'absolute',
+                  bottom: windowHeight - footerTop + btnHeight + bottomSpace + 'px', // btnの上に配置
+              });
+          } else { // btnが存在しない場合
+              topArrow.css({
+                  position: 'absolute',
+                  bottom: windowHeight - footerTop + bottomSpace + 'px', // フッターの上30pxに配置
+              });
+          }
+      } else {
+          if (btn.length) { // btnが存在する場合
+              btn.css({
+                  position: 'fixed',
+                  bottom: '0px', // 固定位置を0pxに設定
+              });
+              topArrow.css({
+                  position: 'fixed',
+                  bottom: 'calc(0px + 31px + 50px)',
+              });
+          } else { // btnが存在しない場合
+              topArrow.css({
+                  position: 'fixed',
+                  bottom: '30px', // 固定位置を30pxに設定
+              });
+          }
+      }
   });
-  // お問い合わせボタン
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
-      $('.c-contact-btn').addClass('active');
-    } else {
-      $('.c-contact-btn').removeClass('active');
-    }
+
+  // トップへ戻る スムーズスクロール
+  $('.c-back-btn').click(function (event) {
+      event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+      $('html, body').animate({ scrollTop: 0 }, 300, 'swing');
   });
+});
 });
 

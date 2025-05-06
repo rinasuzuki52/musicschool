@@ -622,6 +622,10 @@ img {
   align-items: center;
 }
 
+.l-header-nav {
+  height: 100%;
+}
+
 .l-header-nav__lists {
   height: 100%;
   display: flex;
@@ -826,18 +830,16 @@ h2(c-title)
 トップへ戻るボタン
 -----------------*/
 .c-back-btn {
+  display: grid;
   width: 4.25rem;
   height: 4.25rem;
   background-color: #7f7f7f;
   border-radius: 50%;
-  display: grid;
   place-content: center;
-  position: fixed;
-  bottom: 23.0625rem;
   right: 7.25rem;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  cursor: pointer;
   transition: all 0.3s;
 }
 .c-back-btn:hover {
@@ -845,13 +847,9 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .c-back-btn {
-    bottom: 24.375rem;
+    height: 3.4375rem;
     right: 1.25rem;
   }
-}
-.c-back-btn.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .c-back-btn__icon {
@@ -870,8 +868,6 @@ h2(c-title)
   line-height: 1.65;
   letter-spacing: 0.13em;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.4s;
 }
 @media (max-width: 767px) {
@@ -884,10 +880,6 @@ h2(c-title)
     width: 20.9375rem;
     white-space: nowrap;
   }
-}
-.c-contact-btn.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .p-top__fv {
