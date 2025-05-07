@@ -4,10 +4,10 @@
 
 
 // ==========================================================================
-// p-top
+// p-top-fv
 // ==========================================================================
 
-.p-top__fv {
+.p-top-fv {
     margin-top: rem(80);
     width: 100%;
     position: relative;
@@ -17,16 +17,12 @@
     }
 }
 
-// ==========================================================================
-// p-top-fv
-// ==========================================================================
-
-.p-fv__bg {
+.p-top-fv__bg {
     width: 100%;
     position: relative;
 }
 
-.p-fv__bg::after {
+.p-top-fv__bg::after {
     content: "";
     position: absolute;
     top: 0;
@@ -39,7 +35,7 @@
     pointer-events: none;
 }
 
-.p-fv__message {
+.p-top-fv__message {
     position: absolute;
     top: 52%;
     left: 50%;
@@ -50,7 +46,7 @@
         top: 51.5%;
     }
 }
-.p-fv__message__title {
+.p-top-fv__title {
     color: $font-color2;
     font-size: rem(40);
     line-height: calc(60 / 40);
@@ -117,7 +113,11 @@
     }
 }
 
-.p-concept-flow__card {
+// ==========================================================================
+// p-flow-card
+// ==========================================================================
+
+.p-flow-card {
     width: 100%;
     padding-block: rem(8.7);
     display: flex;
@@ -128,7 +128,7 @@
     }
 }
 
-.p-concept-flow__card__en {
+.p-flow-card__en {
     width: rem(150);
     font-size: rem(25);
     line-height: calc(50 / 25);
@@ -142,7 +142,7 @@
     }
 }
 
-.p-concept-flow__card__circle {
+.p-flow-card__circle {
     background-color: $main-color;
     width: rem(20);
     height: rem(20);
@@ -151,7 +151,7 @@
     position: relative;
 }
 
-.p-concept-flow__card__ja {
+.p-flow-card__ja {
     width: rem(150);
     font-size: rem(23);
     line-height: calc(50 / 23);
@@ -166,8 +166,8 @@
 
 // 矢印
 
-.p-concept-flow__card:first-of-type {
-    .p-concept-flow__card__circle {
+.p-flow-card:first-of-type {
+    .p-flow-card__circle {
       &::before {
         content: "";
         position: absolute;
@@ -182,8 +182,8 @@
     }
 }
 
-.p-concept-flow__card:last-of-type {
-    .p-concept-flow__card__circle {
+.p-flow-card:last-of-type {
+    .p-flow-card__circle {
         &::after {
             content: "";
             position: absolute;
@@ -198,8 +198,8 @@
 }
 
 @include sp {
-    .p-concept-flow__card:first-of-type {
-        .p-concept-flow__card__circle {
+    .p-flow-card:first-of-type {
+        .p-flow-card__circle {
           &::before {
             content: "";
             position: absolute;
@@ -212,8 +212,8 @@
         }
     }
     
-    .p-concept-flow__card:last-of-type {
-        .p-concept-flow__card__circle {
+    .p-flow-card:last-of-type {
+        .p-flow-card__circle {
             &::after {
                 content: "";
                 position: absolute;
@@ -228,7 +228,7 @@
 }
 
 // ==========================================================================
-// message
+// p-top-message
 // ==========================================================================
 
 .p-top-message {
@@ -255,7 +255,7 @@
 }
 
 // ==========================================================================
-// reason
+// p-top-reason
 // ==========================================================================
 
 .p-top-reason {
@@ -274,6 +274,10 @@
         row-gap: rem(39);
     }
 }
+
+// ==========================================================================
+// p-top-reason
+// ==========================================================================
 
 .p-reason-card {
     display: flex;
@@ -327,7 +331,7 @@
 }
 
 // ==========================================================================
-// voice
+// p-top-voice
 // ==========================================================================
 
 .p-top-voice {
@@ -345,6 +349,10 @@
 .p-top-voice__title {
     color: $font-color2;
 }
+
+// ==========================================================================
+// p-voice-slider
+// ==========================================================================
 
 .p-voice-slider {
     margin-top: rem(36);
@@ -375,6 +383,10 @@
         width: 100%;
     }
 }
+
+// ==========================================================================
+// p-slider-card
+// ==========================================================================
 
 .p-slider-card {
     width: rem(270);
@@ -417,7 +429,7 @@
 }
 
 // ==========================================================================
-// process
+// p-top-process
 // ==========================================================================
 
 .p-top-process {
@@ -427,7 +439,7 @@
     }
 }
 
-.p-process-lists {
+.p-top-process__lists {
     margin-top: rem(53);
     padding-left: rem(50);
     padding-bottom: rem(16);
@@ -439,7 +451,7 @@
     }
 }
 
-.p-process-lists::before {
+.p-top-process__lists::before {
     content: "";
     position: absolute;
     display: block;
@@ -456,7 +468,7 @@
     }
 }
 
-.p-process-lists::after {
+.p-top-process__lists::after {
     position: absolute;
     display: block;
     content: "";
@@ -473,6 +485,9 @@
     }
 }
 
+// ==========================================================================
+// p-process-list
+// ==========================================================================
 
 .p-process-list {
     display: flex;
@@ -530,6 +545,7 @@
     }
 }
 
+
 // 矢印
 .slick-prev,
 .slick-next {
@@ -553,7 +569,7 @@
 
 
 // ==========================================================================
-// qa
+// p-top-qa
 // ==========================================================================
 
 .p-top-qa {
@@ -563,7 +579,7 @@
     }
 }
 
-.p-qa-lists {
+.p-top-qa__lists {
     margin-top: rem(36);
     width: 100%;
     border-top: 0.05rem solid $font-color1;
@@ -571,6 +587,10 @@
         margin-top: rem(38);
     }
 }
+
+// ==========================================================================
+// p-qa-list
+// ==========================================================================
 
 .p-qa-list {
     border-bottom: 0.05rem solid $font-color1;
@@ -668,7 +688,7 @@
 }
 
 // ==========================================================================
-// blog
+// p-top-blog
 // ==========================================================================
 
 .p-top-blog {
@@ -678,7 +698,7 @@
     }
 }
 
-.p-blog-cards {
+.p-top-blog__lists {
     display: grid;
     grid-template-columns: repeat(3, 1fr); // 3列に分割
     margin-top: rem(35);
@@ -691,6 +711,33 @@
         row-gap: rem(41);
     }
 }
+
+.p-top-blog__more {
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    margin-top: rem(44);
+    @include sp {
+        margin-top: rem(43);
+        justify-content: center;
+    }
+}
+
+.p-top-blog__link {
+    font-size: rem(18);
+    line-height: calc(18 / 18);
+    border-bottom: 0.05rem solid;
+    transition: all .4s;
+    cursor: pointer;
+    &:hover {
+    opacity: 0.7;
+    }
+
+}
+
+// ==========================================================================
+// p-blog-card
+// ==========================================================================
 
 .p-blog-card {
     width: rem(260);
@@ -728,27 +775,4 @@
 
 .p-blog-card__caption {
     padding-block: rem(2.5);
-}
-
-.p-top-blog__more {
-    display: flex;
-    justify-content: flex-end;
-    width:100%;
-    margin-top: rem(44);
-    @include sp {
-        margin-top: rem(43);
-        justify-content: center;
-    }
-}
-
-.p-top-blog__link {
-    font-size: rem(18);
-    line-height: calc(18 / 18);
-    border-bottom: 0.05rem solid;
-    transition: all .4s;
-    cursor: pointer;
-    &:hover {
-    opacity: 0.7;
-    }
-
 }
