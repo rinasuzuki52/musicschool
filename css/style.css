@@ -687,7 +687,7 @@ h2(c-title)
 お問い合わせボタン
 -----------------*/
 .c-contact-btn {
-  padding: 1rem 5.0625rem 0.625rem;
+  padding: 0.9375rem 5.0625rem 0.625rem;
   position: fixed;
   bottom: 17.375rem;
   right: 0;
@@ -1034,12 +1034,18 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .p-top-voice {
-    padding-block: 2.8125rem 3.125rem;
+    padding-block: 2.8125rem 0.9375rem;
   }
 }
 
 .p-top-voice__inner {
-  max-width: 60.625rem;
+  max-width: 64.375rem;
+  padding-inline: 3.75rem;
+}
+@media (max-width: 767px) {
+  .p-top-voice__inner {
+    padding-inline: 1.25rem;
+  }
 }
 
 .p-top-voice__title {
@@ -1057,7 +1063,6 @@ h2(c-title)
 @media (max-width: 767px) {
   .p-voice-slider {
     height: auto;
-    max-height: 22.5rem;
     margin-top: 2.4375rem;
   }
 }
@@ -1122,6 +1127,41 @@ h2(c-title)
   color: #FFF;
 }
 
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 9.0625rem;
+  width: 1.875rem;
+  height: auto;
+  z-index: 100 !important;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    top: 37%;
+  }
+}
+
+.slick-prev {
+  left: -1.875rem;
+}
+@media (max-width: 767px) {
+  .slick-prev {
+    left: 0%;
+  }
+}
+
+.slick-next {
+  right: -1.875rem;
+}
+@media (max-width: 767px) {
+  .slick-next {
+    right: 0%;
+  }
+}
+
 .p-top-process {
   padding-block: 2.125rem 2.5625rem;
 }
@@ -1150,7 +1190,7 @@ h2(c-title)
   position: absolute;
   display: block;
   top: 1.5625rem;
-  bottom: 0;
+  bottom: 0.0625rem;
   left: 3.75rem;
   translate: -50%;
   width: 0.1875rem;
@@ -1169,6 +1209,7 @@ h2(c-title)
   display: block;
   content: "";
   left: 3.75rem;
+  bottom: 0rem;
   transform-origin: left bottom;
   rotate: -45deg;
   width: 1.5rem;
@@ -1247,25 +1288,6 @@ h2(c-title)
     font-size: 1rem;
     line-height: 1.875;
   }
-}
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 42%;
-  width: 1.875rem;
-  height: auto;
-  z-index: 100 !important;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.slick-prev {
-  left: -2.5rem;
-}
-
-.slick-next {
-  right: -2.5rem;
 }
 
 .p-top-qa {
@@ -1396,7 +1418,7 @@ h2(c-title)
 }
 
 .p-top-blog {
-  padding-block: 1rem 11.9375rem;
+  padding-block: 1.0625rem 13.125rem;
 }
 @media (max-width: 767px) {
   .p-top-blog {
