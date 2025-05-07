@@ -338,12 +338,17 @@
     padding-block: rem(44) rem(80);
     background-color: $main-color;
     @include sp {
-        padding-block: rem(45) rem(50);
+        padding-block: rem(45) rem(15);
     }
 }
 
 .p-top-voice__inner {
-    max-width: rem(970);
+    // max-width: rem(970);
+    max-width: rem(1030);
+    padding-inline: rem(60);
+    @include sp {
+        padding-inline: rem(20);
+    }
 }
 
 .p-top-voice__title {
@@ -363,7 +368,6 @@
     align-items: center;
     @include sp {
        height: auto;
-       max-height: rem(360);
        margin-top: rem(39);
     }
 }
@@ -428,6 +432,37 @@
     color: $font-color2;
 }
 
+// 矢印
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: rem(145);
+  width: rem(30);
+  height: auto;
+  z-index: 100 !important;
+  transform: translateY(-50%);
+  cursor: pointer;
+  @include sp {
+    top: 37%;
+  }
+}
+
+.slick-prev {
+  left:rem(-30);
+  @include sp {
+    left: 0%;
+  }
+}
+
+.slick-next {
+  right: rem(-30);
+  @include sp {
+    right: 0%;
+  }
+}
+
+
+
 // ==========================================================================
 // p-top-process
 // ==========================================================================
@@ -456,7 +491,7 @@
     position: absolute;
     display: block;
     top: rem(25);
-    bottom: 0;
+    bottom: rem(1);
     left: rem(60);
     translate: -50%;
     width: rem(3);
@@ -473,6 +508,7 @@
     display: block;
     content: "";
     left: rem(60);
+    bottom: rem(0);
     transform-origin: left bottom;
     rotate: -45deg;
     width: rem(24);
@@ -543,27 +579,6 @@
         font-size: rem(16);
         line-height: calc(30 / 16);
     }
-}
-
-
-// 矢印
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 42%;
-  width: rem(30);
-  height: auto;
-  z-index: 100 !important;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.slick-prev {
-  left:rem(-40);
-}
-
-.slick-next {
-  right: rem(-40);
 }
 
 
@@ -692,7 +707,7 @@
 // ==========================================================================
 
 .p-top-blog {
-    padding-block: rem(16) rem(191);
+    padding-block: rem(17) rem(210);
     @include sp {
         padding-block: rem(24) rem(196);
     }
