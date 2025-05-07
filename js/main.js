@@ -14,7 +14,7 @@ $(function() {
 
 // スライダー
 $(document).ready(function(){
-  $('.p-voice-slider__slider').slick({
+  $('.p-voice-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
@@ -26,8 +26,8 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          arrows: false,
-          dots: true
+          arrows: true,
+          dots: false
         }
       }
     ]
