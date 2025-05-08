@@ -173,7 +173,8 @@ $(document).ready(function () {
 //       }
 //   });
 
-  // トップへ戻る スムーズスクロール
+
+// トップへ戻る
   $('.c-back-btn').click(function (event) {
       event.preventDefault(); // デフォルトのアンカー動作を防ぐ
       $('html, body').animate({ scrollTop: 0 }, 300, 'swing');
