@@ -338,7 +338,7 @@
     padding-block: rem(44) rem(80);
     background-color: $main-color;
     @include sp {
-        padding-block: rem(45) rem(15);
+        padding-block: rem(45) rem(50);
     }
 }
 
@@ -362,12 +362,12 @@
 .p-voice-slider {
     margin-top: rem(36);
     width: 100%;
-    height: rem(340);
+    // height: rem(340);
     position: relative;
     display: block;
     align-items: center;
     @include sp {
-       height: auto;
+    //    height: auto;
        margin-top: rem(39);
     }
 }
