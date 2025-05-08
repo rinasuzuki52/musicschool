@@ -1037,7 +1037,7 @@ h2(c-title)
 }
 @media (max-width: 767px) {
   .p-top-voice {
-    padding-block: 2.8125rem 0.9375rem;
+    padding-block: 2.8125rem 3.125rem;
   }
 }
 
@@ -1058,14 +1058,12 @@ h2(c-title)
 .p-voice-slider {
   margin-top: 2.25rem;
   width: 100%;
-  height: 21.25rem;
   position: relative;
   display: block;
   align-items: center;
 }
 @media (max-width: 767px) {
   .p-voice-slider {
-    height: auto;
     margin-top: 2.4375rem;
   }
 }
