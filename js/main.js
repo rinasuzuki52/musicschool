@@ -78,40 +78,100 @@ $(document).ready(function () {
       }
 
       // フッター手前で位置を変える
-      if (scrollTop + windowHeight > footerTop - bottomSpace) {
-          if (btn.length) { // btnが存在する場合
-              btn.css({
-                  position: 'absolute',
-                  bottom: windowHeight - footerTop + 'px', // フッターに0pxで配置
-              });
-              topArrow.css({
-                  position: 'absolute',
-                  bottom: windowHeight - footerTop + btnHeight + bottomSpace + 'px', // btnの上に配置
-              });
-          } else { // btnが存在しない場合
-              topArrow.css({
-                  position: 'absolute',
-                  bottom: windowHeight - footerTop + bottomSpace + 'px', // フッターの上30pxに配置
-              });
-          }
-      } else {
-          if (btn.length) { // btnが存在する場合
-              btn.css({
-                  position: 'fixed',
-                  bottom: '0px', // 固定位置を0pxに設定
-              });
-              topArrow.css({
-                  position: 'fixed',
-                  bottom: (31 + 50) + 'px',
-              });
-          } else { // btnが存在しない場合
-              topArrow.css({
-                  position: 'fixed',
-                  bottom: '30px', // 固定位置を30pxに設定
-              });
-          }
-      }
+      if (scrollTop + windowHeight > footerTop - (window.innerWidth <= 767 ? 20 : 30)) {
+        var bottomSpace = (window.innerWidth <= 767) ? 20 : 30;
+    
+        if (btn.length) { // btnが存在する場合
+            btn.css({
+                position: 'absolute',
+                bottom: windowHeight - footerTop + 'px', // フッターに0pxで配置
+            });
+            topArrow.css({
+                position: 'absolute',
+                bottom: windowHeight - footerTop + btnHeight + bottomSpace + 'px', // btnの上に配置
+            });
+        } else { // btnが存在しない場合
+            topArrow.css({
+                position: 'absolute',
+                bottom: windowHeight - footerTop + bottomSpace + 'px', // フッターの上に配置
+            });
+        }
+    } else {
+        if (btn.length) { // btnが存在する場合
+            btn.css({
+                position: 'fixed',
+                bottom: '0px', // 固定位置を0pxに設定
+            });
+            topArrow.css({
+                position: 'fixed',
+                bottom: (window.innerWidth <= 767 ? (19 + 50) : (31 + 50)) + 'px',
+            });
+        } else { // btnが存在しない場合
+            topArrow.css({
+                position: 'fixed',
+                bottom: (window.innerWidth <= 767 ? 20 : 30) + 'px', // 固定位置を条件で設定
+            });
+        }
+    }
   });
+
+// $(function() {
+// $(document).ready(function () {
+//   var btn = $('.c-contact-btn');
+//   var topArrow = $('.c-back-btn');
+//   var footer = $('.l-footer');
+
+//   $(window).on('scroll', function () {
+//       var scrollTop = $(this).scrollTop();
+//       var windowHeight = $(window).height();
+//       var footerTop = footer.offset().top;
+//       var btnHeight = btn.length ? btn.outerHeight() : 0; // btnが存在する場合のみ高さを取得
+//       var bottomSpace = 30; // topArrowをフッターの上30pxに設定
+
+//       // ボタンをゆっくり表示/非表示
+//       if (scrollTop > 100) {
+//           btn.fadeIn(500); // 表示速度を600ミリ秒に設定
+//           topArrow.fadeIn(500); // 表示速度を600ミリ秒に設定
+//       } else {
+//           btn.fadeOut(500); // 非表示速度を600ミリ秒に設定
+//           topArrow.fadeOut(500); // 非表示速度を600ミリ秒に設定
+//       }
+
+//       // フッター手前で位置を変える
+//       if (scrollTop + windowHeight > footerTop - bottomSpace) {
+//           if (btn.length) { // btnが存在する場合
+//               btn.css({
+//                   position: 'absolute',
+//                   bottom: windowHeight - footerTop + 'px', // フッターに0pxで配置
+//               });
+//               topArrow.css({
+//                   position: 'absolute',
+//                   bottom: windowHeight - footerTop + btnHeight + bottomSpace + 'px', // btnの上に配置
+//               });
+//           } else { // btnが存在しない場合
+//               topArrow.css({
+//                   position: 'absolute',
+//                   bottom: windowHeight - footerTop + bottomSpace + 'px', // フッターの上30pxに配置
+//               });
+//           }
+//       } else {
+//           if (btn.length) { // btnが存在する場合
+//               btn.css({
+//                   position: 'fixed',
+//                   bottom: '0px', // 固定位置を0pxに設定
+//               });
+//               topArrow.css({
+//                   position: 'fixed',
+//                   bottom: (31 + 50) + 'px',
+//               });
+//           } else { // btnが存在しない場合
+//               topArrow.css({
+//                   position: 'fixed',
+//                   bottom: '30px', // 固定位置を30pxに設定
+//               });
+//           }
+//       }
+//   });
 
   // トップへ戻る スムーズスクロール
   $('.c-back-btn').click(function (event) {

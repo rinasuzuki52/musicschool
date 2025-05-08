@@ -14,3 +14,8 @@
         display: none !important;
     }
 }
+
+.u-scroll-show.active {
+    opacity: 1;
+    visibility: visible;
+}

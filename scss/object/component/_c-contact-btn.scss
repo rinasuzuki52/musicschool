@@ -7,15 +7,17 @@
 -----------------*/
 
 .c-contact-btn {
-    padding: rem(15) rem(81) rem(10);
-    position: fixed;
-    bottom: rem(278);
-    right: 0;
+    width: rem(300);
+    height: rem(60);
     font-size: rem(20);
-    line-height: calc(33 / 20);
-    letter-spacing: 0.13em;
+    font-weight: 600;
+    line-height: 1.65;
+    padding-top: rem(3);
+    letter-spacing: 0.2em;
     z-index: 999;
-    transition: all .4s;
+    position: absolute;
+    bottom: 28.2rem;
+    right: 0;
     @include sp {
         padding: rem(12) rem(101) rem(12) rem(98);
         bottom: rem(304);

@@ -658,15 +658,16 @@ h2(c-title)
 トップへ戻るボタン
 -----------------*/
 .c-back-btn {
-  display: grid;
+  display: flex;
   width: 4.25rem;
   height: 4.25rem;
   background-color: #7f7f7f;
   border-radius: 50%;
-  place-content: center;
-  right: 7.1875rem;
+  justify-content: center;
+  align-items: center;
+  position-anchor: absolute;
+  right: 7.25rem;
   z-index: 999;
-  opacity: 1;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -687,15 +688,17 @@ h2(c-title)
 お問い合わせボタン
 -----------------*/
 .c-contact-btn {
-  padding: 0.9375rem 5.0625rem 0.625rem;
-  position: fixed;
-  bottom: 17.375rem;
-  right: 0;
+  width: 18.75rem;
+  height: 3.75rem;
   font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.65;
-  letter-spacing: 0.13em;
+  padding-top: 0.1875rem;
+  letter-spacing: 0.2em;
   z-index: 999;
-  transition: all 0.4s;
+  position: absolute;
+  bottom: 28.2rem;
+  right: 0;
 }
 @media (max-width: 767px) {
   .c-contact-btn {
@@ -1786,4 +1789,8 @@ h2(c-title)
   .u-pc {
     display: none !important;
   }
+}
+.u-scroll-show.active {
+  opacity: 1;
+  visibility: visible;
 }

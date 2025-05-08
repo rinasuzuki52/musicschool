@@ -8,15 +8,16 @@
 -----------------*/
 
 .c-back-btn {
-    display: grid;
+    display: flex;
     width: rem(68);
     height: rem(68);
     background-color: #7f7f7f;
     border-radius: 50%;
-    place-content: center;
-    right: rem(115);
+    justify-content: center;
+    align-items: center;
+    position-anchor: absolute;
+    right: rem(116);
     z-index: 999;
-    opacity: 1;
     cursor: pointer;
     transition: all .3s;
     &:hover {
