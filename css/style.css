@@ -722,6 +722,24 @@ c-title2(h2)
   }
 }
 
+/* --------------
+c-circle
+-----------------*/
+.c-circle {
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+}
+
+.c-circle__black {
+  background-color: #000;
+}
+
+.c-circle__red {
+  background-color: #cb0000;
+}
+
 .p-top-fv {
   margin-top: 5rem;
   width: 100%;
@@ -1960,9 +1978,22 @@ c-title2(h2)
 .p-plan-table {
   padding-block: 2.3125rem 13.9375rem;
 }
+@media (max-width: 767px) {
+  .p-plan-table {
+    padding-block: 1.125rem 7.875rem;
+  }
+}
 
 .p-plan-table__wrap {
   margin-top: 3.125rem;
+}
+@media (max-width: 767px) {
+  .p-plan-table__wrap {
+    margin-top: 0.3125rem;
+    width: 100%;
+    overflow-x: scroll;
+    table-layout: fixed;
+  }
 }
 
 .p-plan-table__list {
@@ -1970,20 +2001,37 @@ c-title2(h2)
   width: 100%;
   border-bottom: 0.03125rem solid #000;
 }
+@media (max-width: 767px) {
+  .p-plan-table__list {
+    margin-bottom: 1.09375rem;
+    width: 41.875rem;
+  }
+}
 
-.plan-table__text {
+.p-plan-table__text {
   margin-top: 1.75rem;
   font-size: 1.0625rem;
   line-height: 1.4705882353;
+}
+@media (max-width: 767px) {
+  .p-plan-table__text {
+    font-size: 1rem;
+    line-height: 1.875;
+  }
 }
 
 .p-table-head {
   width: 100%;
   height: 5rem;
-  border-bottom: 0.03125rem 0.03125rem;
+  border-bottom: 0.05rem solid #000;
   font-size: 1.25rem;
   line-height: 1.65;
   color: #FFF;
+}
+@media (max-width: 767px) {
+  .p-table-head {
+    line-height: 1.25;
+  }
 }
 
 .p-table-head__black {
@@ -1991,7 +2039,7 @@ c-title2(h2)
   margin-top: 1.875rem;
   padding-block: 0.625rem 0.4375rem;
   background-color: #000;
-  border-inline: 0.03125rem solid #000;
+  border-inline: 0.05rem solid #000;
   text-align: center;
   vertical-align: bottom;
 }
@@ -1999,13 +2047,67 @@ c-title2(h2)
 .p-table-head__red {
   width: 25%;
   background-color: #cb0000;
-  border-inline: 0.03125rem solid #000;
+  border-inline: 0.05rem solid #000;
   text-align: center;
   vertical-align: bottom;
 }
 .p-table-head__red span {
   font-size: 1.0625rem;
   line-height: 1.9411764706;
+}
+
+.p-table-body {
+  height: 5.3125rem;
+  color: #000;
+}
+
+.p-table-body:first-of-type {
+  font-weight: 600;
+}
+
+.p-table-body__category {
+  width: 25%;
+  font-size: 1.0625rem;
+  line-height: 1.7647058824;
+  text-align: left;
+  padding-left: 1.25rem;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .p-table-body__category {
+    font-size: 1rem;
+    line-height: 1.5625;
+  }
+}
+
+.p-table-body__price {
+  width: 25%;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-left: 0.05rem solid #000;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.p-table-body__gray {
+  background-color: rgba(80, 80, 80, 0.149);
+}
+
+.p-table-body__item {
+  border-left: 0.05rem solid #000;
+  font-size: 1.0625rem;
+  line-height: 1.4705882353;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.p-table-body__line {
+  display: inline-block;
+  width: 1.875rem;
+  height: 0.0625rem;
+  background: #707070;
+  vertical-align: middle;
 }
 
 @media (min-width: 768px) {
