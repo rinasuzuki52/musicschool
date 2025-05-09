@@ -113,21 +113,22 @@
 }
 
 .p-table-head__black {
-    display: block;
+    // display: block;
     width: 25%;
     margin-top: rem(30);
     padding-block: rem(10) rem(7);
     background-color: $font-color1;
     border-inline: rem(0.5) solid $font-color1;
-    vertical-align: bottom;
+    text-align: center;
 }
 
 .p-table-head__red {
-    display: block;
+    // display: block;
     width: 25%;
     background-color: $main-color;
-    padding-bottom: rem(5);
     border-inline: rem(0.5) solid $font-color1;
+    text-align: center;
+    vertical-align: bottom;
     span {
         font-size: rem(17);
         line-height: calc(33 / 17);
