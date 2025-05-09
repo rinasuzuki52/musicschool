@@ -1,0 +1,81 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/function' as *; 
+@use '../../foundation/mixin' as *;
+
+// ==========================================================================
+// p-plan-price
+// ==========================================================================
+
+.p-plan-price {
+    padding-block: rem(67) rem(20);
+    @include sp {
+        padding-block: rem(46) rem(20);
+    }
+}
+
+.p-plan-price__btns {
+    margin-top: rem(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(60);
+    @include sp {
+        display: flex;
+        flex-direction: column;  // 縦並びに
+        row-gap: rem(19); 
+    }
+}
+
+.p-plan-price__btn {
+    font-size: rem(20);
+    line-height: calc(33 / 20);
+    font-weight: 600;
+    width: rem(210);
+    height: rem(60);
+    @include sp {
+        margin: 0 auto;
+    }
+}
+
+.p-plan-price__plus {
+    position: relative;
+    width: rem(18.5);
+    height: rem(18.5);
+    @include sp {
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $font-color1; // プラスの線の色（白）
+      @include sp {
+      }
+    }
+  
+    &::before {
+      width: rem(3);
+      height: rem(18.5); // 縦線
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &::after {
+      width: rem(18.5);
+      height: rem(3); // 横線
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+.p-plan-price__text {
+    margin-top: rem(48);
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+    @include sp {
+        font-size: rem(16);
+        line-height: calc(30 / 16);
+    }
+}

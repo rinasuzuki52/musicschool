@@ -631,6 +631,16 @@ h2(c-title)
 }
 
 /* --------------
+c-title2(h2)
+-----------------*/
+.c-title2 {
+  font-size: 1.5625rem;
+  line-height: 1.3333333333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* --------------
 キャプション
 -----------------*/
 .c-caption {
@@ -1870,6 +1880,81 @@ h2(c-title)
 }
 .p-breadcrumbs__item a:hover {
   opacity: 0.5;
+}
+
+.p-plan-price {
+  padding-block: 4.1875rem 1.25rem;
+}
+@media (max-width: 767px) {
+  .p-plan-price {
+    padding-block: 2.875rem 1.25rem;
+  }
+}
+
+.p-plan-price__btns {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
+}
+@media (max-width: 767px) {
+  .p-plan-price__btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1875rem;
+  }
+}
+
+.p-plan-price__btn {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  font-weight: 600;
+  width: 13.125rem;
+  height: 3.75rem;
+}
+@media (max-width: 767px) {
+  .p-plan-price__btn {
+    margin: 0 auto;
+  }
+}
+
+.p-plan-price__plus {
+  position: relative;
+  width: 1.15625rem;
+  height: 1.15625rem;
+}
+.p-plan-price__plus::before, .p-plan-price__plus::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+.p-plan-price__plus::before {
+  width: 0.1875rem;
+  height: 1.15625rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-plan-price__plus::after {
+  width: 1.15625rem;
+  height: 0.1875rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-plan-price__text {
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-plan-price__text {
+    font-size: 1rem;
+    line-height: 1.875;
+  }
 }
 
 @media (min-width: 768px) {
