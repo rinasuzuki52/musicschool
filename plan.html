@@ -57,15 +57,28 @@
         </div>
     </header>
     <main class="p-plan">
-        <section class="p-plan__mv p-mv">
-            <div class="p-mv__bg">
+        <!-- ファーストビュー -->
+        <section class="p-plan__fv p-fv-lower">
+            <div class="p-fv-lower__bg">
                 <picture>
                     <source media="(max-width: 767px)" srcset="images/plan/plan-sp.jpg">
                     <img src="images/plan/plan.jpg" alt="プラン・料金">
                 </picture>
             </div>
-            <div class="p-mv__title">
+            <div class="p-fv-lower__title">
                 <h1>プラン・料金</h1>
+            </div>
+        </section>
+        <!-- パンくずリスト -->
+        <section class="p-plan__breadcrumbs p-plan-breadcrumbs p-breadcrumbs">
+            <div class="p-plan-breadcrumbs__inner p-breadcrumbs__inner l-inner">
+                <nav class="p-breadcrumbs__list">
+                    <ul>
+                      <li><a class="p-breadcrumbs__item" href="/index.html">ホーム</a></li>
+                      <li><p class="p-breadcrumbs__item">＞</p></li>
+                      <li><a class="p-breadcrumbs__item" href="/plan.html">プラン・料金</a></li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
