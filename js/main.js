@@ -6,7 +6,7 @@ $(function() {
 
     $('.c-hamburger').click(function() {
         $(this).toggleClass('active');
-        $('.l-header-nav__lists').toggleClass('active');
+        $('.p-header-nav__lists').toggleClass('active');
     });
 
 });
