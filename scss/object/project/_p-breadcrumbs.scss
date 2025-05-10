@@ -9,12 +9,11 @@
 .p-breadcrumbs__inner {
     padding-inline: rem(23);
     @include sp {
-        padding-inline: rem(13
-        );
+        padding-inline: rem(13);
     }
 }
 
-.p-plan-breadcrumbs {
+.p-breadcrumbs {
     padding-top: rem(3);
     background-color: #e8e8e8;
 }
@@ -37,6 +36,10 @@
     padding: rem(7);
     font-size: rem(16);
     line-height: calc(33 / 16);
+    @include sp {
+        padding: rem(0);
+        padding-inline: rem(7);
+    }
 }
 
 .p-breadcrumbs__item a {
