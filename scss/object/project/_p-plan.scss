@@ -7,7 +7,7 @@
 // ==========================================================================
 
 .p-plan-price {
-    padding-block: rem(67) rem(20);
+    padding-block: rem(69) rem(20);
     @include sp {
         padding-block: rem(46) rem(20);
     }
@@ -91,15 +91,36 @@
     }
 }
 
+
 .p-plan-table__wrap {
     margin-top: rem(50);
     @include sp {
         margin-top: rem(5);
-        width: 100%;
         overflow-x: scroll;
         table-layout: fixed;
     }
 }
+
+@include sp {
+  .p-plan-table__wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: rem(25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(80, 80, 80, 0.251);
+      width: rem(100);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(80, 80, 80, 0.149);
+    }
+  }
+}
+
 
 .p-plan-table__list {
     border-collapse: collapse;
@@ -139,12 +160,7 @@
 
 .p-table-head__black {
     width: 25%;
-    margin-top: rem(30);
-    padding-block: rem(10) rem(7);
-    background-color: $font-color1;
-    border-inline: 0.05rem solid $font-color1;
-    text-align: center;
-    vertical-align: bottom;
+    vertical-align: bottom; 
 }
 
 .p-table-head__red {
@@ -158,6 +174,20 @@
         line-height: calc(33 / 17);
     }
 }
+
+.p-table-head__inner {
+  height: rem(50);
+  align-items: flex-end;
+  justify-content: center;
+  padding-block: rem(10) rem(7);
+  background-color: $font-color1;
+  border-inline: 0.05rem solid $font-color1;
+  text-align: center;
+  @include sp {
+    height: rem(66);
+  }
+}
+
 
 // ==========================================================================
 // p-table-body
