@@ -2184,11 +2184,38 @@ c-circle
   display: flex;
   -moz-column-gap: 3.125rem;
        column-gap: 3.125rem;
+  transition: 0.3s;
+}
+.p-list-item__wrap:hover {
+  opacity: 0.5;
 }
 
 .p-list-item__image {
   width: 16.25rem;
   overflow: hidden;
+  position: relative;
+}
+
+.p-list-item__textarea {
+  flex: 1;
+}
+
+.p-list-item__title {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.p-list-item__time {
+  font-size: 1.0625rem;
+  line-height: 1.7647058824;
+  margin-top: 0.1875rem;
+}
+
+.p-list-item__article {
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+  margin-top: 0.6875rem;
 }
 
 @media (min-width: 768px) {

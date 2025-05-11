@@ -36,9 +36,36 @@
     width: 100%;
     display: flex;
     column-gap: rem(50);
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .p-list-item__image {
     width: rem(260);
     overflow: hidden;
+    position: relative;
+}
+
+.p-list-item__textarea {
+    flex: 1;
+}
+
+.p-list-item__title {
+    font-size: rem(20);
+    line-height: calc(25 / 20);
+    font-weight: 600;
+}
+
+.p-list-item__time {
+    font-size: rem(17);
+    line-height: calc(30 / 17);
+    margin-top: rem(3);
+}
+
+.p-list-item__article {
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+    margin-top: rem(11);
 }
