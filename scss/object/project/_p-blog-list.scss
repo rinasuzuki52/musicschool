@@ -42,10 +42,13 @@
     }
 }
 
+.p-list-item__right {
+    position: relative;
+}
+
 .p-list-item__image {
     width: rem(260);
     overflow: hidden;
-    position: relative;
 }
 
 .p-list-item__textarea {

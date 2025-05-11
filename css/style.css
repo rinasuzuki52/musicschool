@@ -2190,10 +2190,13 @@ c-circle
   opacity: 0.5;
 }
 
+.p-list-item__right {
+  position: relative;
+}
+
 .p-list-item__image {
   width: 16.25rem;
   overflow: hidden;
-  position: relative;
 }
 
 .p-list-item__textarea {
