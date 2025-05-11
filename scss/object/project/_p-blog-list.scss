@@ -19,6 +19,10 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(70);
+    @include sp {
+        margin-top: rem(39);
+        row-gap: rem(39);
+    }
 }
 
 // ==========================================================================
@@ -40,15 +44,26 @@
     &:hover {
         opacity: 0.5;
     }
+    @include sp {
+        flex-direction: column;
+        row-gap: rem(30);
+    }
 }
 
 .p-list-item__right {
     position: relative;
+    width: rem(260);
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-list-item__image {
     width: rem(260);
     overflow: hidden;
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-list-item__textarea {
@@ -59,16 +74,29 @@
     font-size: rem(20);
     line-height: calc(25 / 20);
     font-weight: 600;
+    @include sp {
+        line-height: calc(30 / 20);
+    }
 }
 
 .p-list-item__time {
     font-size: rem(17);
     line-height: calc(30 / 17);
     margin-top: rem(3);
+    @include sp {
+        margin-top: rem(6);
+        display: flex;
+        justify-content: end;
+    }
 }
 
 .p-list-item__article {
     font-size: rem(18);
     line-height: calc(30 / 18);
     margin-top: rem(11);
+    @include sp {
+        font-size: rem(16);
+        line-height: calc(30 / 16);
+        margin-top: rem(8);
+    }
 }
