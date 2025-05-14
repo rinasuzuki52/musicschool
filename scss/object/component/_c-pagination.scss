@@ -8,7 +8,7 @@ c-pagination
 -----------------*/
 
 .c-pagination {
-    margin-top: rem(70);
+    margin-top: rem(72);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,10 @@ c-pagination
         width: rem(44);
         height: rem(44);
     }
+}
+
+.c-pagination__item:last-child {
+    margin-right: 0;
 }
 
 .c-pagination__item a {
@@ -67,9 +71,9 @@ c-pagination
     align-items: center; // 垂直方向中央
     justify-content: center; // 水平方向中央
     font-size: rem(18);
-    margin-right: rem(10);
+    margin-inline:rem(10) rem(20);
     @include sp {
         font-size: rem(16);
-        margin-right: rem(5);
+        margin-inline: rem(7) rem(12);
     }
 }

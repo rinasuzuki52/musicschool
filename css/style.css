@@ -745,7 +745,7 @@ c-circle
 c-pagination
 -----------------*/
 .c-pagination {
-  margin-top: 4.375rem;
+  margin-top: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -770,6 +770,10 @@ c-pagination
     width: 2.75rem;
     height: 2.75rem;
   }
+}
+
+.c-pagination__item:last-child {
+  margin-right: 0;
 }
 
 .c-pagination__item a {
@@ -810,12 +814,12 @@ c-pagination
   align-items: center;
   justify-content: center;
   font-size: 1.125rem;
-  margin-right: 0.625rem;
+  margin-inline: 0.625rem 1.25rem;
 }
 @media (max-width: 767px) {
   .c-pagination__disable {
     font-size: 1rem;
-    margin-right: 0.3125rem;
+    margin-inline: 0.4375rem 0.75rem;
   }
 }
 
@@ -2234,11 +2238,11 @@ c-pagination
 }
 
 .p-list-section {
-  padding-block: 4.1875rem 13.125rem;
+  padding-block: 4.3125rem 13.125rem;
 }
 @media (max-width: 767px) {
   .p-list-section {
-    padding-block: 3.125rem 13.125rem;
+    padding-block: 3.125rem 12.6875rem;
   }
 }
 
@@ -2251,7 +2255,7 @@ c-pagination
 }
 @media (max-width: 767px) {
   .p-list-section__items {
-    margin-top: 2.4375rem;
+    margin-top: 2.5625rem;
     row-gap: 2.4375rem;
   }
 }
@@ -2308,6 +2312,7 @@ c-pagination
   font-size: 1.25rem;
   line-height: 1.25;
   font-weight: 600;
+  margin-bottom: 0.1875rem;
 }
 @media (max-width: 767px) {
   .p-list-item__title {
@@ -2318,7 +2323,6 @@ c-pagination
 .p-list-item__time {
   font-size: 1.0625rem;
   line-height: 1.7647058824;
-  margin-top: 0.1875rem;
 }
 @media (max-width: 767px) {
   .p-list-item__time {
