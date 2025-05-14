@@ -88,7 +88,7 @@
                     当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
                     通常３営業日以内にメールにてご連絡させていただきます。
                 </p>
-                <form action="#" class="p-contact-form__block p-form">
+                <form action="#" method="post" class="p-contact-form__block p-form">
                     <dl class="p-form__group">
                         <dt>
                             <label for="company-name" class="p-form__label">
@@ -141,8 +141,35 @@
                                 <input type="checkbox" name="purpose" value="プランについてのお問い合わせ">
                                 <span>プランについてのお問い合わせ</span>
                             </label>
+                            <label class="p-form__checkbox">
+                                <input type="checkbox" name="purpose" value="プランについてのお問い合わせ">
+                                <span>ヒアリングのご予約</span>
+                            </label>
+                            <label class="p-form__checkbox">
+                                <input type="checkbox" name="purpose" value="プランについてのお問い合わせ">
+                                <span>資料請求</span>
+                            </label>
+                            <label class="p-form__checkbox">
+                                <input type="checkbox" name="purpose" value="プランについてのお問い合わせ">
+                                <span>その他</span>
+                            </label>
                         </dd>
                     </dl>
+                    <dl class="p-form__group">
+                        <dt>
+                            <label for="content" class="p-form__label">
+                                内容
+                            </label>
+                        </dt>
+                        <dd>
+                            <textarea name="content" id="content" class="p-form__textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
+                        </dd>
+                    </dl>
+                    <div class="p-form__submit">
+                        <button class="p-form__btn c-btn">
+                            送 信
+                        </button>
+                    </div>
                 </form>
             </div>
          </section>
