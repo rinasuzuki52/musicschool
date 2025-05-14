@@ -7,9 +7,9 @@
 // ==========================================================================
 
 .p-list-section {
-    padding-block: rem(67) rem(210);
+    padding-block: rem(69) rem(210);
     @include sp {
-        padding-block: rem(50) rem(210);
+        padding-block: rem(50) rem(203);
     }
 }
 
@@ -20,7 +20,7 @@
     flex-direction: column;
     row-gap: rem(70);
     @include sp {
-        margin-top: rem(39);
+        margin-top: rem(41);
         row-gap: rem(39);
     }
 }
@@ -74,6 +74,7 @@
     font-size: rem(20);
     line-height: calc(25 / 20);
     font-weight: 600;
+    margin-bottom: rem(3);
     @include sp {
         line-height: calc(30 / 20);
     }
@@ -82,7 +83,6 @@
 .p-list-item__time {
     font-size: rem(17);
     line-height: calc(30 / 17);
-    margin-top: rem(3);
     @include sp {
         margin-top: rem(6);
         display: flex;
