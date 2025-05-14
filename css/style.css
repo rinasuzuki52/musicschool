@@ -2493,6 +2493,30 @@ c-pagination
   display: block;
 }
 
+.p-form__textarea {
+  width: 100%;
+  background-color: #FFF;
+  min-height: 18.75rem;
+  resize: vertical;
+  padding: 0.8125rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 2.2;
+  border: solid 0.03125rem #000;
+}
+
+.p-form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.125rem;
+}
+
+.p-form__btn {
+  width: 15.625rem;
+  height: 3.125rem;
+  font-size: 1.5625rem;
+  line-height: 1.32;
+}
+
 @media (min-width: 768px) {
   .u-sp {
     display: none !important;
