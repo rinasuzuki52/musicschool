@@ -76,5 +76,40 @@
 }
 
 .p-form__checkbox span {
-    
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+    position: relative;
+    padding-left: rem(40);
+    cursor: pointer;
+}
+
+.p-form__checkbox span::before {
+    content: "";
+    width: rem(20);
+    height: rem(20);
+    background: $font-color2;
+    border: rem(0.5) solid $font-color1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.p-form__checkbox span::after {
+    content: "";
+    width: rem(17);
+    height: rem(9);
+    border-left: rem(3) solid $main-color;
+    border-bottom: rem(4) solid $main-color;
+    position: absolute;
+    top: 45%;
+    left: rem(2);
+    transform: translateY(-50%) rotate(-55deg);
+    display: none;
+    z-index: 10;
+}
+
+.p-form__checkbox input:checked + span::after {
+  display: block;
 }
