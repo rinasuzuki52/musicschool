@@ -37,13 +37,13 @@
 }
 
 .p-search-list__items {
-    margin-top: rem(42);
+    margin-top: rem(40);
     width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: rem(70);
     @include sp {
-        margin-top: rem(41);
+        margin-top: rem(42);
         row-gap: rem(39);
     }
 }
