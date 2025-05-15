@@ -2404,6 +2404,13 @@ c-pagination
   font-size: 1.125rem;
   line-height: 1.6666666667;
 }
+@media (max-width: 767px) {
+  .p-contact-form__text {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.875;
+  }
+}
 
 .p-contact-form__block {
   margin-top: 4.0625rem;
