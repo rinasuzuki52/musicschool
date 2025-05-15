@@ -8,6 +8,9 @@
 
 .p-contact-form__area {
     padding-block: rem(68) rem(100);
+    @include sp {
+        padding-block: rem(47) rem(108);
+    }
 }
 
 .p-contact-form__text {
@@ -20,6 +23,9 @@
 .p-contact-form__block {
     margin-top: rem(65);
     width: 100%;
+    @include sp {
+        margin-top: rem(32);
+    }
 }
 
 // ==========================================================================
@@ -29,6 +35,10 @@
 .p-form__group {
     display: flex;
     margin-bottom: rem(30);
+    @include sp {
+        flex-direction: column;
+        margin-bottom: rem(13);
+    }
 }
 
 .p-form__group dt {
@@ -44,6 +54,12 @@
     line-height: calc(33 / 20);
     font-weight: 500;
     padding-top: rem(7);
+    @include sp {
+        font-size: rem(16);
+        line-height: calc(33 / 16);
+        padding-top: 0;
+        padding-bottom: rem(2);
+    }
 }
 
 .p-form__control {
@@ -58,6 +74,9 @@
 
 .p-form__check {
     line-height: calc(30 / 20);
+    @include sp {
+        line-height: calc(33 / 16);
+    }
 }
 
 .p-form__checkboxes {
@@ -81,6 +100,11 @@
     position: relative;
     padding-left: rem(40);
     cursor: pointer;
+    @include sp {
+        font-size: rem(16);
+        line-height: calc(30 / 16);
+        padding-left: rem(30);
+    }
 }
 
 .p-form__checkbox span::before {
@@ -123,6 +147,10 @@
     font-size: rem(15);
     line-height: calc(33 / 15);
     border: solid rem(0.5) $font-color1;
+    @include sp {
+        min-height: rem(190);
+        line-height: calc(25 / 15);
+    }
 }
 
 .p-form__submit {
@@ -136,4 +164,9 @@
     height: rem(50);
     font-size: rem(25);
     line-height: calc(33 / 25);
+    @include sp {
+        width: 100%;
+        font-size: rem(20);
+        line-height: calc(26 / 20);
+    }
 }
