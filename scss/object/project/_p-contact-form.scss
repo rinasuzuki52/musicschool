@@ -26,7 +26,7 @@
 }
 
 .p-contact-form__block {
-    margin-top: rem(65);
+    margin-top: rem(64);
     width: 100%;
     @include sp {
         margin-top: rem(32);
@@ -46,6 +46,13 @@
     }
 }
 
+.p-form__group2 {
+    margin-bottom: rem(26);
+    @include sp {
+        margin-bottom: rem(7);
+    }
+}
+
 .p-form__group dt {
     width: rem(170);
 }
@@ -55,6 +62,7 @@
 }
 
 .p-form__label {
+    display: flex;
     font-size: rem(20);
     line-height: calc(33 / 20);
     font-weight: 500;
@@ -79,6 +87,7 @@
 
 .p-form__check {
     line-height: calc(30 / 20);
+    padding-top: 0;
     @include sp {
         line-height: calc(33 / 16);
     }
@@ -88,7 +97,8 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    row-gap: rem(9);
+    row-gap: rem(10);
+    margin-top: rem(-4);
 }
 
 .p-form__checkbox {
@@ -103,7 +113,7 @@
     font-size: rem(18);
     line-height: calc(30 / 18);
     position: relative;
-    padding-left: rem(40);
+    padding-left: rem(39);
     cursor: pointer;
     @include sp {
         font-size: rem(16);
@@ -119,7 +129,7 @@
     background: $font-color2;
     border: rem(0.5) solid $font-color1;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     transform: translateY(-50%);
     z-index: 9;
@@ -132,7 +142,7 @@
     border-left: rem(3) solid $main-color;
     border-bottom: rem(4) solid $main-color;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: rem(2);
     transform: translateY(-50%) rotate(-55deg);
     display: none;

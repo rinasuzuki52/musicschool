@@ -2413,7 +2413,7 @@ c-pagination
 }
 
 .p-contact-form__block {
-  margin-top: 4.0625rem;
+  margin-top: 4rem;
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -2433,6 +2433,15 @@ c-pagination
   }
 }
 
+.p-form__group2 {
+  margin-bottom: 1.625rem;
+}
+@media (max-width: 767px) {
+  .p-form__group2 {
+    margin-bottom: 0.4375rem;
+  }
+}
+
 .p-form__group dt {
   width: 10.625rem;
 }
@@ -2442,6 +2451,7 @@ c-pagination
 }
 
 .p-form__label {
+  display: flex;
   font-size: 1.25rem;
   line-height: 1.65;
   font-weight: 500;
@@ -2468,6 +2478,7 @@ c-pagination
 
 .p-form__check {
   line-height: 1.5;
+  padding-top: 0;
 }
 @media (max-width: 767px) {
   .p-form__check {
@@ -2479,7 +2490,8 @@ c-pagination
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  row-gap: 0.5625rem;
+  row-gap: 0.625rem;
+  margin-top: -0.25rem;
 }
 
 .p-form__checkbox {
@@ -2494,7 +2506,7 @@ c-pagination
   font-size: 1.125rem;
   line-height: 1.6666666667;
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.4375rem;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -2512,7 +2524,7 @@ c-pagination
   background: #FFF;
   border: 0.03125rem solid #000;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   transform: translateY(-50%);
   z-index: 9;
@@ -2525,7 +2537,7 @@ c-pagination
   border-left: 0.1875rem solid #cb0000;
   border-bottom: 0.25rem solid #cb0000;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 0.125rem;
   transform: translateY(-50%) rotate(-55deg);
   display: none;
@@ -2574,7 +2586,7 @@ c-pagination
 }
 
 .p-contact-send__area {
-  padding-block: 4.25rem 6.25rem;
+  padding-block: 4.25rem 5.625rem;
 }
 @media (max-width: 767px) {
   .p-contact-send__area {
@@ -2599,7 +2611,7 @@ c-pagination
 .p-contact-send__btnarea {
   display: flex;
   justify-content: center;
-  margin-top: 3.125rem;
+  margin-top: 2.5rem;
 }
 
 .p-contact-send__btn {
