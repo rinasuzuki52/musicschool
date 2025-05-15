@@ -7,7 +7,7 @@
 // ==========================================================================
 
 .p-contact-send__area {
-    padding-block: rem(68) rem(100);
+    padding-block: rem(68) rem(90);
     @include sp {
         padding-block: rem(47) rem(108);
     }
@@ -29,7 +29,7 @@
 .p-contact-send__btnarea {
     display: flex;
     justify-content: center;
-    margin-top: rem(50);
+    margin-top: rem(40);
 }
 
 .p-contact-send__btn {
