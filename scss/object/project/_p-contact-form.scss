@@ -18,6 +18,11 @@
     text-align: center;
     font-size: rem(18);
     line-height: calc(30 / 18);
+    @include sp {
+        text-align: left;
+        font-size: rem(16);
+        line-height: calc(30 / 16);
+    }
 }
 
 .p-contact-form__block {
