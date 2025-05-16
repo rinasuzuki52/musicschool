@@ -1,0 +1,22 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/function' as *; 
+@use '../../foundation/mixin' as *;
+
+// ==========================================================================
+// p-result-section
+// ==========================================================================
+
+.p-result-section {
+    padding-block: rem(69) rem(210);
+    @include sp {
+        padding-block: rem(50) rem(203);
+    }
+}
+
+.p-result-section__items {
+    margin-top: rem(40);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(70);
+}
