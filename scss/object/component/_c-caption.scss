@@ -19,6 +19,7 @@
   color: $font-color2;
   font-size: rem(15);
   line-height: calc(25 / 15);
+  font-weight: 600;
   z-index: 99;
   @include sp {
     width: rem(90);
