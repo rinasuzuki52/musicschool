@@ -1,0 +1,14 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/function' as *; 
+@use '../../foundation/mixin' as *;
+
+// ==========================================================================
+// p-result-details
+// ==========================================================================
+
+.p-result-details {
+    margin-top: rem(80);
+    @include sp {
+        margin-top: rem(50);
+    }
+}
