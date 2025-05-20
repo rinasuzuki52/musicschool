@@ -2740,7 +2740,12 @@ c-pagination
 }
 
 .p-details {
-  margin-block: 4.375rem 9.8125rem;
+  padding-block: 4.375rem 9.8125rem;
+}
+@media (max-width: 767px) {
+  .p-details {
+    padding-block: 3.125rem 12.3125rem;
+  }
 }
 
 .p-details__imagearea {
@@ -2760,6 +2765,13 @@ c-pagination
   font-size: 1.5625rem;
   line-height: 1.6;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .p-details__title {
+    margin-top: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
 .p-details__time {

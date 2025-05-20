@@ -18,7 +18,10 @@
 // ==========================================================================
 
 .p-details {
-    margin-block: rem(70) rem(157);
+    padding-block: rem(70) rem(157);
+    @include sp {
+        padding-block: rem(50) rem(197);
+    }
 }
 
 .p-details__imagearea {
@@ -38,6 +41,11 @@
     font-size: rem(25);
     line-height: calc(40 / 25);
     font-weight: 600;
+    @include sp {
+        margin-top: rem(30);
+        font-size: rem(20);
+        line-height: calc(30 / 20);
+    }
 }
 
 .p-details__time {
