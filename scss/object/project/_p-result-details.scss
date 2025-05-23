@@ -58,13 +58,21 @@
     display: flex;
     margin-top: rem(55);
     column-gap: rem(40);
+    @include sp {
+        margin-top: rem(21);
+        flex-direction: column;
+        row-gap: rem(26);
+    }
 }
 
 .p-details__table {
     width: rem(400);
     border: rem(0.5) solid #707070;
-     border-collapse: collapse;
+    border-collapse: collapse;
     background-color: $font-color2;
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-details__table tbody {
@@ -78,6 +86,9 @@
     padding-block: rem(8) 0;
     padding-left: rem(20);
     text-align: left;
+    @include sp {
+        padding-left: rem(10);
+    }
 }
 
 .p-details__table td:first-child {
@@ -85,23 +96,36 @@
     font-weight: 700;
     width: rem(140);
     padding-block: rem(5.5) rem(2);
+    @include sp {
+        width: rem(120);
+    }
 }
 
 .p-details__text {
     width: rem(440);
     font-size: rem(18);
     line-height: calc(30 / 18);
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-details__articlearea {
     margin-top: rem(60);
     display: flex;
     column-gap: rem(200);
+    @include sp {
+        margin-top: rem(40);
+        column-gap: rem(22);
+    }
 }
 
 .p-details__article {
     width: rem(340);
     transition: all 0.3s ease;
+    @include sp {
+        width: rem(156);
+    }
     &:hover {
         opacity: 0.5;
     }
@@ -119,6 +143,9 @@
     text-align: left;
     padding: rem(3) rem(20) rem(1);
     width: 100%;
+    @include sp {
+        padding: rem(4) rem(20) rem(3);
+    }
 }
 
 .p-prev__articlearea {
@@ -142,6 +169,9 @@
     font-size: rem(16);
     font-weight: 600;
     line-height: calc(25 / 16);
+    @include sp {
+        width: 100%;
+    }
 }
 
 .p-prev__next {
@@ -154,6 +184,9 @@
 
 .p-related {
     margin-top: rem(100);
+    @include sp {
+        margin-top: rem(70);
+    }
 }
 
 .p-related__label {
@@ -164,6 +197,10 @@
     line-height: calc(33 / 18);
     padding: rem(10) 0 rem(7) rem(30);
     text-align: left;
+    @include sp {
+        text-align: center;
+        padding: rem(10) 0 rem(7) 0;
+    }
 }
 
 .p-related__list {
@@ -182,8 +219,7 @@
         opacity: 0.5;
     }
     @include sp {
-        flex-direction: column;
-        row-gap: rem(30);
+        column-gap: rem(20);
     }
 }
 
@@ -191,7 +227,7 @@
     position: relative;
     width: rem(260);
     @include sp {
-        width: 100%;
+        width: rem(160);
     }
 }
 
@@ -213,7 +249,8 @@
     font-weight: 600;
     margin-bottom: rem(3);
     @include sp {
-        line-height: calc(30 / 20);
+        font-size: rem(17);
+        line-height: calc(28 / 17);
     }
 }
 
@@ -221,9 +258,7 @@
     font-size: rem(17);
     line-height: calc(30 / 17);
     @include sp {
-        margin-top: rem(6);
-        display: flex;
-        justify-content: end;
+        margin-top: rem(3);
     }
 }
 

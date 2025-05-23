@@ -2786,12 +2786,24 @@ c-pagination
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
 }
+@media (max-width: 767px) {
+  .p-details__tablearea {
+    margin-top: 1.3125rem;
+    flex-direction: column;
+    row-gap: 1.625rem;
+  }
+}
 
 .p-details__table {
   width: 25rem;
   border: 0.03125rem solid #707070;
   border-collapse: collapse;
   background-color: #FFF;
+}
+@media (max-width: 767px) {
+  .p-details__table {
+    width: 100%;
+  }
 }
 
 .p-details__table tbody {
@@ -2806,6 +2818,11 @@ c-pagination
   padding-left: 1.25rem;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .p-details__table td {
+    padding-left: 0.625rem;
+  }
+}
 
 .p-details__table td:first-child {
   background-color: #E5E5E5;
@@ -2813,11 +2830,21 @@ c-pagination
   width: 8.75rem;
   padding-block: 0.34375rem 0.125rem;
 }
+@media (max-width: 767px) {
+  .p-details__table td:first-child {
+    width: 7.5rem;
+  }
+}
 
 .p-details__text {
   width: 27.5rem;
   font-size: 1.125rem;
   line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .p-details__text {
+    width: 100%;
+  }
 }
 
 .p-details__articlearea {
@@ -2826,10 +2853,22 @@ c-pagination
   -moz-column-gap: 12.5rem;
        column-gap: 12.5rem;
 }
+@media (max-width: 767px) {
+  .p-details__articlearea {
+    margin-top: 2.5rem;
+    -moz-column-gap: 1.375rem;
+         column-gap: 1.375rem;
+  }
+}
 
 .p-details__article {
   width: 21.25rem;
   transition: all 0.3s ease;
+}
+@media (max-width: 767px) {
+  .p-details__article {
+    width: 9.75rem;
+  }
 }
 .p-details__article:hover {
   opacity: 0.5;
@@ -2843,6 +2882,11 @@ c-pagination
   text-align: left;
   padding: 0.1875rem 1.25rem 0.0625rem;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .p-prev {
+    padding: 0.25rem 1.25rem 0.1875rem;
+  }
 }
 
 .p-prev__articlearea {
@@ -2869,6 +2913,11 @@ c-pagination
   font-weight: 600;
   line-height: 1.5625;
 }
+@media (max-width: 767px) {
+  .p-prev__title {
+    width: 100%;
+  }
+}
 
 .p-prev__next {
   text-align: right;
@@ -2876,6 +2925,11 @@ c-pagination
 
 .p-related {
   margin-top: 6.25rem;
+}
+@media (max-width: 767px) {
+  .p-related {
+    margin-top: 4.375rem;
+  }
 }
 
 .p-related__label {
@@ -2886,6 +2940,12 @@ c-pagination
   line-height: 1.8333333333;
   padding: 0.625rem 0 0.4375rem 1.875rem;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .p-related__label {
+    text-align: center;
+    padding: 0.625rem 0 0.4375rem 0;
+  }
 }
 
 .p-related__list {
@@ -2907,8 +2967,8 @@ c-pagination
 }
 @media (max-width: 767px) {
   .p-related__wrap {
-    flex-direction: column;
-    row-gap: 1.875rem;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 }
 
@@ -2918,7 +2978,7 @@ c-pagination
 }
 @media (max-width: 767px) {
   .p-related__right {
-    width: 100%;
+    width: 10rem;
   }
 }
 
@@ -2944,7 +3004,8 @@ c-pagination
 }
 @media (max-width: 767px) {
   .p-related__title {
-    line-height: 1.5;
+    font-size: 1.0625rem;
+    line-height: 1.6470588235;
   }
 }
 
@@ -2954,9 +3015,7 @@ c-pagination
 }
 @media (max-width: 767px) {
   .p-related__time {
-    margin-top: 0.375rem;
-    display: flex;
-    justify-content: end;
+    margin-top: 0.1875rem;
   }
 }
 
