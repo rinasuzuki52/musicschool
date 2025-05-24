@@ -5,9 +5,16 @@
 // ==========================================================================
 // p-blog-details
 // ==========================================================================
+.p-blog-details {
+    margin-top: rem(80);
+    @include sp {
+        margin-top: rem(50);
+    }
+}
+
 
 // ブログ詳細
-.p-blog-details {
+.p-blog-details__main {
   &__img-area {
     position: relative;
     img {

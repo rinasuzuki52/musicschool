@@ -555,18 +555,19 @@ img {
 
 .l-two-col-container {
   display: grid;
-  grid-template-columns: 1fr 25rem;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-  padding-block: 7rem 18.7rem;
+  grid-template-columns: 1fr 15.625rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  padding-block: 4.375rem 11.6875rem;
 }
 @media (max-width: 767px) {
   .l-two-col-container {
     grid-template-columns: 1fr;
-    row-gap: 2.8rem;
-    padding-block: 4.7rem 19.7rem;
+    row-gap: 1.75rem;
+    padding-block: 2.9375rem 12.3125rem;
   }
 }
+
 .l-two-col-container__side {
   display: flex;
   flex-direction: column;
@@ -842,6 +843,23 @@ c-pagination
     font-size: 1rem;
     margin-inline: 0.4375rem 0.75rem;
   }
+}
+
+/* --------------
+c-side-title
+-----------------*/
+.c-side-title {
+  height: 3.125rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-side-title p {
+  color: #FFF;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
 }
 
 .p-top-fv {
@@ -2385,64 +2403,73 @@ c-pagination
   }
 }
 
-.p-blog-details__img-area {
+.p-blog-details {
+  margin-top: 5rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details {
+    margin-top: 3.125rem;
+  }
+}
+
+.p-blog-details__main__img-area {
   position: relative;
 }
-.p-blog-details__img-area img {
+.p-blog-details__main__img-area img {
   aspect-ratio: 600/350;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 767px) {
-  .p-blog-details__img-area img {
+  .p-blog-details__main__img-area img {
     aspect-ratio: 335/200;
   }
 }
-.p-blog-details__title {
+.p-blog-details__main__title {
   margin-top: 4.6rem;
 }
 @media (max-width: 767px) {
-  .p-blog-details__title {
+  .p-blog-details__main__title {
     margin-top: 3rem;
   }
 }
-.p-blog-details__title h1 {
+.p-blog-details__main__title h1 {
   font-size: 2.5rem;
   line-height: 1.6;
   font-weight: bold;
 }
 @media (max-width: 767px) {
-  .p-blog-details__title h1 {
+  .p-blog-details__main__title h1 {
     font-size: 2rem;
     line-height: 1.5;
   }
 }
-.p-blog-details__date {
+.p-blog-details__main__date {
   margin-top: 0.5rem;
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
 @media (max-width: 767px) {
-  .p-blog-details__date {
+  .p-blog-details__main__date {
     margin-top: 0.6rem;
   }
 }
-.p-blog-details__sns {
+.p-blog-details__main__sns {
   margin-top: 2rem;
 }
-.p-blog-details__contents {
+.p-blog-details__main__contents {
   margin-top: 4.8rem;
 }
 @media (max-width: 767px) {
-  .p-blog-details__contents {
+  .p-blog-details__main__contents {
     margin-top: 2.7rem;
   }
 }
-.p-blog-details__pagination {
+.p-blog-details__main__pagination {
   margin-top: 5.4rem;
 }
 @media (max-width: 767px) {
-  .p-blog-details__pagination {
+  .p-blog-details__main__pagination {
     margin-top: 4rem;
   }
 }
@@ -3154,6 +3181,83 @@ c-pagination
     font-size: 1rem;
     line-height: 1.875;
     margin-top: 0.5rem;
+  }
+}
+
+.p-side-magazine__contents {
+  padding: 0.9375rem;
+  border: 0.0625rem solid #000;
+}
+@media (max-width: 767px) {
+  .p-side-magazine__contents {
+    padding: 1.25rem;
+  }
+}
+
+.p-side-magazine__banner {
+  position: relative;
+}
+
+.p-side-magazine__banner p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 1.125rem;
+  line-height: 1.8333333333;
+  font-weight: 600;
+}
+
+.p-side-search__contents {
+  padding: 0.9375rem;
+  border: 0.0625rem solid #000;
+}
+@media (max-width: 767px) {
+  .p-side-search__contents {
+    padding: 1.25rem;
+  }
+}
+
+.p-side-search__form {
+  display: flex;
+}
+
+.p-side-search__input {
+  display: block;
+  flex: 1;
+  height: 2.5rem;
+  background-color: #e8e8e8;
+  padding-inline: 0.625rem;
+  font-size: 0.875rem;
+}
+@media (max-width: 767px) {
+  .p-side-search__input {
+    height: 3.375rem;
+  }
+}
+
+.p-side-search__button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #000;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .p-side-search__button {
+    width: 3.375rem;
+    height: 3.375rem;
+  }
+}
+
+.p-side-search__button span {
+  width: 1.25rem;
+}
+@media (max-width: 767px) {
+  .p-side-search__button span {
+    width: 1.625rem;
   }
 }
 
