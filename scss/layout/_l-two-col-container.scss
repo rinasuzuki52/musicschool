@@ -8,17 +8,18 @@
 
 .l-two-col-container {
   display: grid;
-  grid-template-columns: 1fr 25rem;
-  column-gap: 3rem;
-  padding-block: 7rem 18.7rem;
+  grid-template-columns: 1fr rem(250);
+  column-gap: rem(30);
+  padding-block: rem(70) rem(187);
   @include sp {
     grid-template-columns: 1fr;
-    row-gap: 2.8rem;
-    padding-block: 4.7rem 19.7rem;
+    row-gap: rem(28);
+    padding-block: rem(47) rem(197);
   }
-  &__side {
+}
+
+.l-two-col-container__side {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
-  }
 }
