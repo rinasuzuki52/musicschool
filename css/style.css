@@ -553,6 +553,26 @@ img {
   }
 }
 
+.l-two-col-container {
+  display: grid;
+  grid-template-columns: 1fr 25rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  padding-block: 7rem 18.7rem;
+}
+@media (max-width: 767px) {
+  .l-two-col-container {
+    grid-template-columns: 1fr;
+    row-gap: 2.8rem;
+    padding-block: 4.7rem 19.7rem;
+  }
+}
+.l-two-col-container__side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
 /* --------------
 ハンバーガーメニュー
 -----------------*/
@@ -2362,6 +2382,68 @@ c-pagination
     font-size: 1rem;
     line-height: 1.875;
     margin-top: 0.5rem;
+  }
+}
+
+.p-blog-details__img-area {
+  position: relative;
+}
+.p-blog-details__img-area img {
+  aspect-ratio: 600/350;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-blog-details__img-area img {
+    aspect-ratio: 335/200;
+  }
+}
+.p-blog-details__title {
+  margin-top: 4.6rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details__title {
+    margin-top: 3rem;
+  }
+}
+.p-blog-details__title h1 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-blog-details__title h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+.p-blog-details__date {
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+}
+@media (max-width: 767px) {
+  .p-blog-details__date {
+    margin-top: 0.6rem;
+  }
+}
+.p-blog-details__sns {
+  margin-top: 2rem;
+}
+.p-blog-details__contents {
+  margin-top: 4.8rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details__contents {
+    margin-top: 2.7rem;
+  }
+}
+.p-blog-details__pagination {
+  margin-top: 5.4rem;
+}
+@media (max-width: 767px) {
+  .p-blog-details__pagination {
+    margin-top: 4rem;
   }
 }
 
