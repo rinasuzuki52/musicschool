@@ -18,6 +18,7 @@
 @use "layout/l-footer";
 @use "layout/l-header";
 @use "layout/l-inner";
+@use "layout/l-two-col-container";
 
 
 // ==========================================================================
@@ -50,12 +51,14 @@
 @use "object/project/p-breadcrumbs";
 @use "object/project/p-plan";
 @use "object/project/p-blog-list";
+@use "object/project/p-blog-details";
 @use "object/project/p-search";
 @use "object/project/p-contact-form";
 @use "object/project/p-contact-send";
 @use "object/project/p-404";
 @use "object/project/p-result-list";
 @use "object/project/p-result-details";
+@use "object/project/p-side-category";
 
 
 // -----------------------------------------------------------------
