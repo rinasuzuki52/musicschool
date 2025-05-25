@@ -2456,6 +2456,15 @@ c-side-title
   margin-top: 1.25rem;
 }
 
+.p-blog-details__contents {
+  margin-top: 3rem;
+}
+
+.p-blog-body__text {
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+}
+
 .p-sns-share {
   display: flex;
   -moz-column-gap: 0.25rem;
