@@ -5,6 +5,7 @@
 // ==========================================================================
 // p-blog-details
 // ==========================================================================
+
 .p-blog-details {
     margin-top: rem(80);
     @include sp {
@@ -12,157 +13,145 @@
     }
 }
 
-
-// ブログ詳細
-.p-blog-details__main {
-  &__img-area {
+.p-blog-details__imgarea {
     position: relative;
-    img {
-      aspect-ratio: 600 / 350;
-      object-fit: cover;
-      @include sp {
-        aspect-ratio: 335 / 200;
-      }
-    }
-  }
-  &__title {
-    margin-top: 4.6rem;
+}
+
+.p-blog-details__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-blog-details__caption {
+    width: rem(80);
+}
+
+.p-blog-details__title {
+    margin-top: rem(46);
+    font-size: rem(25);
+    line-height: calc(40 / 25);
+    font-weight: 600;
     @include sp {
-      margin-top: 3rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      line-height: calc(40 / 25);
-      font-weight: bold;
-      @include sp {
-        font-size: 2rem;
+        margin-top: rem(30);
+        font-size: rem(20);
         line-height: calc(30 / 20);
-      }
     }
-  }
-  &__date {
-    margin-top: 0.5rem;
-    font-size: 1.7rem;
+}
+
+.p-blog-details__time {
+    display: inline-block;
+    margin-top: rem(5);
+    font-size: rem(17);
     line-height: calc(30 / 17);
     @include sp {
-      margin-top: 0.6rem;
+        margin-top: rem(6);
     }
+}
+
+.p-blog-details__sns {
+  margin-top: rem(20);
+}
+
+// ==========================================================================
+// p-sns-share
+// ==========================================================================
+
+.p-sns-share {
+  display: flex;
+  column-gap: rem(4);
+  @include sp {
+    column-gap: rem(3);
   }
-  &__sns {
-    margin-top: 2rem;
+}
+
+.p-sns-share__item {
+  width: rem(105);
+  height: rem(40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: rem(10);
+  font-weight: bold;
+  color: $font-color2;
+  @include sp {
+    width: initial;
+    flex: 1;
   }
-  &__contents {
-    margin-top: 4.8rem;
-    @include sp {
-      margin-top: 2.7rem;
-    }
+}
+
+.p-sns-share__name {
+  font-size: rem(10);
+  line-height: calc(33 / 10);
+}
+
+// / ==========================================================================
+// p-facebook
+// ==========================================================================
+
+.p-facebook {
+  background-color: rgb(66, 88, 147);
+}
+
+.p-facebook__icon {
+  width: rem(11.1);
+}
+
+// / ==========================================================================
+// p-twitter
+// ==========================================================================
+
+.p-twitter {
+  background-color: rgb(74, 159, 235);
+  @include pc {
+    width: rem(88);
   }
-  // &__wp-editor {
-  //   font-size: 1.8rem;
-  //   line-height: calc(30 / 18);
-  //   @include sp {
-  //     font-size: 1.6rem;
-  //     line-height: calc(30 / 16);
-  //   }
-  //   h2 {
-  //     margin-block: 3.3rem 1.5rem;
-  //     font-size: 2rem;
-  //     font-weight: bold;
-  //     line-height: calc(40 / 20);
-  //     @include sp {
-  //       line-height: calc(30 / 20);
-  //     }
-  //   }
-  //   h3 {
-  //     margin-block: 4.3rem 1.7rem;
-  //     font-size: 2rem;
-  //     line-height: calc(40 / 20);
-  //     font-weight: bold;
-  //     padding-left: 1.1rem;
-  //     position: relative;
-  //     @include sp {
-  //       line-height: calc(30 / 20);
-  //       margin-bottom: 2rem;
-  //     }
-  //     &::before {
-  //       content: "";
-  //       width: 0.3rem;
-  //       height: 2rem;
-  //       height: calc(100% - 2rem);
-  //       background: #000;
-  //       position: absolute;
-  //       left: 0;
-  //       top: 50%;
-  //       transform: translateY(-50%);
-  //       @include sp {
-  //         height: calc(100% - 1rem);
-  //       }
-  //     }
-  //   }
-  //   p {
-  //     margin-block: 1.7rem;
-  //   }
-  //   p:has(img) {
-  //     margin-block: 1.7rem;
-  //     @include sp {
-  //       margin-top: 3.9rem;
-  //     }
-  //     img {
-  //       width: 30rem;
-  //       aspect-ratio: 300 / 200;
-  //       object-fit: cover;
-  //       @include sp {
-  //         width: 100%;
-  //       }
-  //     }
-  //   }
-  //   blockquote {
-  //     display: flex;
-  //     column-gap: 0.8rem;
-  //     padding: 1.8rem 3rem 1rem;
-  //     background: $gray;
-  //     margin-block: 1.7rem 2.9rem;
-  //     @include sp {
-  //       column-gap: 1.7rem;
-  //       padding: 1.7rem 2rem 1.1rem 2.5rem;
-  //       margin-bottom: 2.6rem;
-  //     }
-  //     .quotation-icon {
-  //       display: inline-block;
-  //       width: 2.7rem;
-  //     }
-  //     p {
-  //       margin: 0;
-  //       flex: 1;
-  //     }
-  //   }
-  //   ul {
-  //     margin-block: 2.8rem;
-  //     li {
-  //       font-size: 1.8rem;
-  //       line-height: 1.6;
-  //       padding-left: 1em;
-  //       text-indent: -1em;
-  //     }
-  //   }
-  //   hr {
-  //     margin-block: 4.1rem;
-  //     @include sp {
-  //       margin-bottom: 5rem;
-  //     }
-  //   }
-  //   a {
-  //     font-size: 2rem;
-  //     font-weight: bold;
-  //     color: $red;
-  //     margin-block: 1.8rem;
-  //     text-decoration: underline;
-  //   }
-  // }
-  &__pagination {
-    margin-top: 5.4rem;
-    @include sp {
-      margin-top: 4rem;
-    }
+}
+
+.p-twitter__icon {
+  width: rem(20.9);
+}
+
+// ==========================================================================
+// p-hatena
+// ==========================================================================
+
+.p-hatena {
+  background-color: rgb(78, 172, 213);
+  @include pc {
+    width: rem(93);
   }
+}
+
+.p-hatena__icon {
+  width: rem(16.9);
+}
+
+// ==========================================================================
+// p-line
+// ==========================================================================
+
+.p-line {
+  background-color: rgb(82, 181, 52);
+  @include pc {
+    width: rem(81);
+  }
+}
+
+.p-line__icon {
+  width: rem(20.3);
+}
+
+// ==========================================================================
+// p-pocket
+// ==========================================================================
+
+.p-pocket {
+  background-color: rgb(220, 79, 90);
+  @include pc {
+    width: rem(91);
+  }
+}
+
+.p-pocket__icon {
+  width: rem(21.6);
 }
