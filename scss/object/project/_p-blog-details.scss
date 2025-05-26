@@ -272,8 +272,9 @@
     display: flex;
     column-gap: rem(79);
     @include sp {
-        margin-top: rem(40);
-        column-gap: rem(22);
+      justify-content: space-between;
+      margin-top: rem(40);
+      column-gap: rem(22);
     }
 }
 
