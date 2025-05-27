@@ -110,6 +110,7 @@
     margin-top: rem(12);
     @include sp {
         margin-top: rem(25);
+        padding-right: rem(5);
     }
 }
 
@@ -303,7 +304,7 @@
 
 .p-reason-card__title {
     padding-left: rem(50);
-    padding-bottom: rem(8);
+    padding-bottom: rem(7);
     font-size: rem(22);
     line-height: calc(33 / 22);
     font-weight: 600;
@@ -362,12 +363,10 @@
 .p-voice-slider {
     margin-top: rem(36);
     width: 100%;
-    // height: rem(340);
     position: relative;
     display: block;
     align-items: center;
     @include sp {
-    //    height: auto;
        margin-top: rem(39);
     }
 }
@@ -429,7 +428,11 @@
     font-size: rem(18);
     line-height: calc(30 / 18);
     font-weight: 500;
+    letter-spacing: -0.05em;
     color: $font-color2;
+    @include sp {
+        letter-spacing: 0;
+    }
 }
 
 // 矢印
@@ -443,7 +446,7 @@
   transform: translateY(-50%);
   cursor: pointer;
   @include sp {
-    top: 37%;
+    top: 41%;
   }
 }
 
@@ -468,7 +471,7 @@
 // ==========================================================================
 
 .p-top-process {
-    padding-block: rem(34) rem(41);
+    padding-block: rem(34) rem(42);
     @include sp {
         padding-block: rem(46) rem(25);
     }
