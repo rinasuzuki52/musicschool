@@ -2128,11 +2128,17 @@ c-side-title
   max-width: 55rem;
   display: flex;
   height: 100%;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  -moz-column-gap: 1.0625rem;
+       column-gap: 1.0625rem;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .p-breadcrumbs__list ul {
+    -moz-column-gap: 1.0625rem;
+         column-gap: 1.0625rem;
+  }
 }
 
 .p-breadcrumbs__list li {
@@ -2448,7 +2454,7 @@ c-side-title
 }
 @media (max-width: 767px) {
   .p-list-section__items {
-    margin-top: 2.5625rem;
+    margin-top: 2.625rem;
     row-gap: 2.4375rem;
   }
 }
