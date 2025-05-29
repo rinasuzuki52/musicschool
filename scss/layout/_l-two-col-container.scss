@@ -10,16 +10,16 @@
   display: grid;
   grid-template-columns: 1fr rem(250);
   column-gap: rem(30);
-  padding-block: rem(70) rem(187);
+  padding-block: rem(70) rem(190);
   @include sp {
     grid-template-columns: 1fr;
     row-gap: rem(28);
-    padding-block: rem(47) rem(197);
+    padding-block: rem(52) rem(197);
   }
 }
 
 .l-two-col-container__side {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: rem(30);
 }

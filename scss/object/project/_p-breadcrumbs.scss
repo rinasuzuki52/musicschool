@@ -29,6 +29,10 @@
     }
 }
 
+.p-breadcrumbs__list2 {
+    column-gap: rem(20);
+}
+
 .p-breadcrumbs__list li {
     height: 100%;
 }
@@ -47,14 +51,12 @@
 }
 
 .p-breadcrumbs__item2 {
-    @include sp {
         @include sp {
         line-height: 1;
         padding-block: rem(12) 0;
         display: flex;
         align-items: center;
-    }
-    }
+        }
 }
 
 .p-breadcrumbs__item a {

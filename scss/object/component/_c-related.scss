@@ -7,7 +7,7 @@
 // ==========================================================================
 
 .c-related {
-    margin-top: rem(100);
+    margin-top: rem(94);
     @include sp {
         margin-top: rem(62);
     }
@@ -59,9 +59,23 @@
     }
 }
 
+.c-related__right2 {
+    width: rem(200);
+    @include sp {
+        width: rem(160);
+    }
+}
+
 .c-related__image {
     width: rem(260);
     overflow: hidden;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.c-related__image2 {
+    width: rem(200);
     @include sp {
         width: 100%;
     }
@@ -74,8 +88,18 @@
     }
 }
 
+.c-related__caption2 {
+    width: rem(80);
+}
+
 .c-related__textarea {
     flex: 1;
+}
+
+.c-related__textarea2 {
+    @include sp {
+        padding-top: rem(8);
+    }
 }
 
 .c-related__title {
