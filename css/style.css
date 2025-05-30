@@ -3109,7 +3109,7 @@ c-side-title
   font-size: 1.125rem;
   line-height: 1.6666666667;
   position: relative;
-  padding-left: 2.4375rem;
+  padding-left: 2.5rem;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -3164,6 +3164,7 @@ c-side-title
 @media (max-width: 767px) {
   .p-form__textarea {
     min-height: 11.875rem;
+    height: 11.875rem;
     line-height: 1.6666666667;
   }
 }
@@ -3193,7 +3194,7 @@ c-side-title
 }
 @media (max-width: 767px) {
   .p-contact-send__area {
-    padding-block: 2.9375rem 6.75rem;
+    padding-block: 2.9375rem 3.125rem;
   }
 }
 
@@ -3236,7 +3237,7 @@ c-side-title
 }
 @media (max-width: 767px) {
   .p-404__area {
-    padding-block: 2.9375rem 6.75rem;
+    padding-block: 2.9375rem 3.125rem;
   }
 }
 
@@ -3258,6 +3259,11 @@ c-side-title
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
+}
+@media (max-width: 767px) {
+  .p-404__btnarea {
+    margin-top: 0.5625rem;
+  }
 }
 
 .p-404__btn {
