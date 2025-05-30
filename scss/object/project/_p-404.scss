@@ -9,7 +9,7 @@
 .p-404__area {
     padding-block: rem(68) rem(90);
     @include sp {
-        padding-block: rem(47) rem(108);
+        padding-block: rem(47) rem(50);
     }
 }
 
@@ -29,6 +29,9 @@
     display: flex;
     justify-content: center;
     margin-top: rem(40);
+    @include sp {
+        margin-top: rem(9);
+    }
 }
 
 .p-404__btn {

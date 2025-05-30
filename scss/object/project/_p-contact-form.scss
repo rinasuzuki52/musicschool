@@ -113,7 +113,7 @@
     font-size: rem(18);
     line-height: calc(30 / 18);
     position: relative;
-    padding-left: rem(39);
+    padding-left: rem(40);
     cursor: pointer;
     @include sp {
         font-size: rem(16);
@@ -164,6 +164,7 @@
     border: solid rem(0.5) $font-color1;
     @include sp {
         min-height: rem(190);
+        height: rem(190);
         line-height: calc(25 / 15);
     }
 }
