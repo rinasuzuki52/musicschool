@@ -69,13 +69,25 @@ $(document).ready(function () {
       var bottomSpace = 30; // topArrowをフッターの上30pxに設定
 
       // ボタンをゆっくり表示/非表示
-      if (scrollTop > 100) {
-          btn.fadeIn(500); // 表示速度を600ミリ秒に設定
-          topArrow.fadeIn(500); // 表示速度を600ミリ秒に設定
-      } else {
-          btn.fadeOut(500); // 非表示速度を600ミリ秒に設定
-          topArrow.fadeOut(500); // 非表示速度を600ミリ秒に設定
-      }
+      $(window).on('scroll', function () {
+  var scrollTop = $(this).scrollTop();
+
+  if (scrollTop > 100) {
+    btn.addClass('active');
+    topArrow.addClass('active');
+  } else {
+    btn.removeClass('active');
+    topArrow.removeClass('active');
+  }
+});
+
+      // if (scrollTop > 100) {
+      //     btn.fadeIn(500); // 表示速度を600ミリ秒に設定
+      //     topArrow.fadeIn(500); // 表示速度を600ミリ秒に設定
+      // } else {
+      //     btn.fadeOut(500); // 非表示速度を600ミリ秒に設定
+      //     topArrow.fadeOut(500); // 非表示速度を600ミリ秒に設定
+      // }
 
       // フッター手前で位置を変える
       if (scrollTop + windowHeight > footerTop - (window.innerWidth <= 767 ? 20 : 30)) {

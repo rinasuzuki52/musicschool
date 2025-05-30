@@ -15,6 +15,12 @@
     }
 }
 
+.u-scroll-show {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
 .u-scroll-show.active {
     opacity: 1;
     visibility: visible;

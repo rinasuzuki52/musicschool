@@ -17,7 +17,7 @@
     margin-top: rem(41);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: rem(61) 12%;
+    gap: rem(71) 12%;
     @include sp {
         display: flex;
         flex-direction: column;
