@@ -35,23 +35,54 @@ $(document).ready(function(){
 });
 
 
-  
-//TOPアコーディオン
 $(function() {
   $('.p-qa-list__a').hide(); // 最初は答えを非表示に
 
   $('.p-qa-list__q').on('click', function() {
     var $answer = $(this).next('.p-qa-list__a');
+    var $question = $(this);
 
     if ($answer.is(':visible')) {
       $answer.slideUp();
-      $(this).removeClass('active');
+      $question.removeClass('active');
     } else {
       $answer.slideDown();
-      $(this).addClass('active');
+      $question.addClass('active');
     }
   });
+
+  // ▼追加部分：答えをクリックしても閉じるようにする
+  $('.p-qa-list__a').on('click', function() {
+    var $answer = $(this);
+    var $question = $answer.prev('.p-qa-list__q');
+
+    $answer.slideUp();
+    $question.removeClass('active');
+  });
 });
+
+
+  
+//TOPアコーディオン
+// $(function() {
+//   $('.p-qa-list__a').hide(); // 最初は答えを非表示に
+
+//   $('.p-qa-list__q').on('click', function() {
+//     var $answer = $(this).next('.p-qa-list__a');
+
+//     if ($answer.is(':visible')) {
+//       $answer.slideUp();
+//       $(this).removeClass('active');
+//     } else {
+//       $answer.slideDown();
+//       $(this).addClass('active');
+//     }
+//   });
+// });
+
+
+
+
 
 $(function () {
   var btn = $('.c-contact-btn');
