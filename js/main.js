@@ -83,7 +83,15 @@ $(function() {
 // });
 
 
-
+// ブログタイトルを20文字まで表示
+$(function(){
+  $('.p-blog-card__title').each(function(){
+    const txt = $(this).text().trim();
+    if (txt.length > 20) {
+      $(this).text( txt.substr(0, 20) + '…' );
+    }
+  });
+});
 
 
 $(function () {
