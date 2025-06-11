@@ -671,7 +671,9 @@ c-title2(h2)
   top: 0;
   left: 0;
   height: 1.875rem;
-  width: 5rem;
+  min-width: 5rem;
+  max-width: 6.25rem;
+  padding-inline: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1799,6 +1801,17 @@ c-side-title
 @media (max-width: 767px) {
   .p-blog-card {
     width: 100%;
+  }
+}
+
+.p-blog-card__image {
+  aspect-ratio: 260/200;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-blog-card__image {
+    aspect-ratio: 335/200;
   }
 }
 
