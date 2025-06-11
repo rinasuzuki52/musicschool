@@ -1413,7 +1413,7 @@ c-side-title
 }
 @media (max-width: 767px) {
   .p-slider-card__img {
-    aspect-ratio: 335/220;
+    aspect-ratio: 335/200;
   }
 }
 
@@ -1508,7 +1508,7 @@ c-side-title
   position: absolute;
   display: block;
   top: 1.5625rem;
-  bottom: 0.0625rem;
+  bottom: -0.1875rem;
   left: 3.75rem;
   translate: -50%;
   width: 0.1875rem;
@@ -1527,7 +1527,7 @@ c-side-title
   display: block;
   content: "";
   left: 3.75rem;
-  bottom: 0rem;
+  bottom: -0.3125rem;
   transform-origin: left bottom;
   rotate: -45deg;
   width: 1.5rem;
@@ -1574,7 +1574,6 @@ c-side-title
   color: #cb0000;
   font-weight: 600;
   gap: 3.125rem;
-  margin-top: 0.625rem;
 }
 @media (max-width: 767px) {
   .p-process-list__title {
@@ -1674,6 +1673,7 @@ c-side-title
   position: relative;
   padding-block: 0.9375rem;
   background-color: rgba(203, 0, 0, 0.098);
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .p-qa-list__a {
@@ -1712,6 +1712,7 @@ c-side-title
   display: flex;
   align-items: center;
   padding-left: 0.625rem;
+  padding-right: 3.125rem;
   font-size: 1.0625rem;
   line-height: 1.7647058824;
   font-weight: 600;
@@ -1719,6 +1720,7 @@ c-side-title
 @media (max-width: 767px) {
   .p-qa-list__text {
     padding-left: 1.25rem;
+    padding-right: 0;
     font-size: 1rem;
     line-height: 1.875;
     font-weight: 500;

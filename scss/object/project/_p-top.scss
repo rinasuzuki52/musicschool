@@ -410,7 +410,7 @@
     object-fit: cover;
     transition: transform 0.3s ease;
     @include sp {
-        aspect-ratio: 335 / 220;
+        aspect-ratio: 335 / 200;
     }
 }
 
@@ -497,7 +497,7 @@
     position: absolute;
     display: block;
     top: rem(25);
-    bottom: rem(1);
+    bottom: rem(-3);
     left: rem(60);
     translate: -50%;
     width: rem(3);
@@ -514,7 +514,7 @@
     display: block;
     content: "";
     left: rem(60);
-    bottom: rem(0);
+    bottom: rem(-5);
     transform-origin: left bottom;
     rotate: -45deg;
     width: rem(24);
@@ -557,7 +557,6 @@
     color: $main-color;
     font-weight: 600;
     gap: rem(50);
-    margin-top: rem(10);
     @include sp {
         margin-top: rem(5);
         gap: rem(20);
@@ -655,6 +654,7 @@
     position: relative;
     padding-block: rem(15);
     background-color: rgba(203, 0, 0, 0.098);
+    cursor: pointer;
     @include sp {
         padding-block: rem(17) rem(9);
     }
@@ -689,11 +689,13 @@
     display: flex;
     align-items: center;
     padding-left: rem(10);
+    padding-right: rem(50);
     font-size: rem(17);
     line-height: calc(30 / 17);
     font-weight: 600;
     @include sp {
         padding-left: rem(20);
+        padding-right: 0;
         font-size: rem(16);
         line-height: calc(30 / 16);
         font-weight: 500;
