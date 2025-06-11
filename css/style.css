@@ -582,6 +582,7 @@ img {
   height: 3.125rem;
   background-color: #cb0000;
   position: relative;
+  cursor: pointer;
 }
 .c-hamburger span {
   display: block;
@@ -629,7 +630,7 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .c-btn:hover {
   color: #cb0000;
@@ -698,14 +699,10 @@ c-title2(h2)
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  position-anchor: absolute;
+  position: absolute;
   right: 7.25rem;
   z-index: 999;
   cursor: pointer;
-  transition: all 0.3s;
-}
-.c-back-btn:hover {
-  opacity: 0.5;
 }
 @media (max-width: 767px) {
   .c-back-btn {
@@ -1395,6 +1392,7 @@ c-side-title
 .p-slider-card {
   width: 16.875rem;
   margin-inline: 1.09375rem;
+  transition: transform 0.3s ease;
 }
 @media (max-width: 767px) {
   .p-slider-card {
@@ -1402,14 +1400,13 @@ c-side-title
     margin-inline: 0;
   }
 }
+.p-slider-card:hover .p-slider-card__img {
+  transform: scale(1.05);
+}
 
 .p-slider-card__img {
   width: 100%;
   transition: transform 0.3s ease;
-}
-
-.p-slider-card__img:hover .p-slider__img {
-  transform: scale(1.05);
 }
 
 .p-slider-card__name {
@@ -3844,11 +3841,11 @@ c-side-title
 }
 .u-scroll-show {
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
 }
 
 .u-scroll-show.active {
   opacity: 1;
-  visibility: visible;
+  pointer-events: auto;
 }
