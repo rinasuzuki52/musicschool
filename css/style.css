@@ -1406,7 +1406,15 @@ c-side-title
 
 .p-slider-card__img {
   width: 100%;
+  aspect-ratio: 270/190;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 0.3s ease;
+}
+@media (max-width: 767px) {
+  .p-slider-card__img {
+    aspect-ratio: 335/220;
+  }
 }
 
 .p-slider-card__name {
