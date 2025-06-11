@@ -774,6 +774,14 @@
     }
 }
 
+.p-blog-card__image {
+    aspect-ratio: 260 / 200;
+    object-fit: cover;
+    @include sp {
+        aspect-ratio: 335 / 200;
+    }
+}
+
 .p-blog-card__title {
     padding-top: rem(20);
     font-size: rem(20);
