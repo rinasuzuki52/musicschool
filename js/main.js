@@ -35,6 +35,8 @@ $(document).ready(function(){
 });
 
 
+// アコーディオン
+
 $(function() {
   $('.p-qa-list__a').hide(); // 最初は答えを非表示に
 

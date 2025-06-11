@@ -629,6 +629,7 @@
     transform-origin: center;
     /* 鋭角に見せるために横幅を縮める */
     scale: 0.8 1.1;
+    transition: transform 0.4s ease;
     @include sp {
     right: rem(15);
     top: 50%;
@@ -689,13 +690,12 @@
     display: flex;
     align-items: center;
     padding-left: rem(10);
-    padding-right: rem(50);
     font-size: rem(17);
     line-height: calc(30 / 17);
     font-weight: 600;
+    width: 87.2%;
     @include sp {
         padding-left: rem(20);
-        padding-right: 0;
         font-size: rem(16);
         line-height: calc(30 / 16);
         font-weight: 500;
