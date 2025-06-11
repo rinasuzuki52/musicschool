@@ -17,11 +17,14 @@
 
 .u-scroll-show {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
+    // visibility: hidden;
+    pointer-events: none;
+    // transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 .u-scroll-show.active {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
+    // visibility: visible;
 }

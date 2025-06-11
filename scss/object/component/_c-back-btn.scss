@@ -15,14 +15,14 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    position-anchor: absolute;
+    position: absolute;
     right: rem(116);
     z-index: 999;
     cursor: pointer;
-    transition: all .3s;
-    &:hover {
-        opacity: 0.5;
-    }
+    // transition: all .3s;
+    // &:hover {
+    //     opacity: 0.5;
+    // }
     @include sp {
         right: rem(20);
     }

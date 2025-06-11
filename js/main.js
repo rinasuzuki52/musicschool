@@ -115,7 +115,7 @@ $(function () {
   // --- トップへ戻るボタンのスムーススクロール ---
   $('.c-back-btn').click(function (event) {
     event.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 300, 'swing');
+    $('html, body').animate({ scrollTop: 0 }, 700, 'swing');
   });
 });
 
