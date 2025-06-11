@@ -32,6 +32,11 @@
     font-weight: 600;
     width: rem(210);
     height: rem(60);
+    color: $font-color2; 
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include sp {
         margin: 0 auto;
     }
@@ -128,7 +133,7 @@
     border-bottom: rem(0.5) solid $font-color1;
     @include sp {
         margin-bottom: rem(17.5);
-        width: rem(670);
+        min-width: rem(670);
     }
 }
 
