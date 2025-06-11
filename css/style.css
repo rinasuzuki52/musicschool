@@ -2272,6 +2272,11 @@ c-side-title
   font-weight: 600;
   width: 13.125rem;
   height: 3.75rem;
+  color: #FFF;
+  background-color: #cb0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .p-plan-price__btn {
@@ -2360,7 +2365,7 @@ c-side-title
 @media (max-width: 767px) {
   .p-plan-table__list {
     margin-bottom: 1.09375rem;
-    width: 41.875rem;
+    min-width: 41.875rem;
   }
 }
 
