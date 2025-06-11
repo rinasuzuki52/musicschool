@@ -1644,6 +1644,7 @@ c-side-title
   transform-origin: center;
   /* 鋭角に見せるために横幅を縮める */
   scale: 0.8 1.1;
+  transition: transform 0.4s ease;
 }
 @media (max-width: 767px) {
   .p-qa-list__q::after {
@@ -1712,15 +1713,14 @@ c-side-title
   display: flex;
   align-items: center;
   padding-left: 0.625rem;
-  padding-right: 3.125rem;
   font-size: 1.0625rem;
   line-height: 1.7647058824;
   font-weight: 600;
+  width: 87.2%;
 }
 @media (max-width: 767px) {
   .p-qa-list__text {
     padding-left: 1.25rem;
-    padding-right: 0;
     font-size: 1rem;
     line-height: 1.875;
     font-weight: 500;
