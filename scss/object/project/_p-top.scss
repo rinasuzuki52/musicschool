@@ -406,14 +406,13 @@
 
 .p-slider-card__img {
     width: 100%;
+    aspect-ratio: 270 / 190;
+    object-fit: cover;
     transition: transform 0.3s ease;
+    @include sp {
+        aspect-ratio: 335 / 220;
+    }
 }
-
-// .p-slider-card__img:hover {
-//     .p-slider__img {
-//         transform: scale(1.05);
-//     }
-// }
 
 .p-slider-card__name {
     padding-top: rem(17);
