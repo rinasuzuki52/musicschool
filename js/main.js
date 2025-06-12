@@ -85,14 +85,22 @@ $(function() {
 
 // ブログタイトルを20文字まで表示
 $(function(){
-  $('.p-blog-card__title').each(function(){
+  // 表示文字数の上限（ここでは25文字に設定）
+  const LIMIT = 25;
+
+  // 対象となるセレクタをカンマでつなぐ
+  $('.p-blog-card__title, .p-list-item__title').each(function(){
     const txt = $(this).text().trim();
-    if (txt.length > 20) {
-      $(this).text( txt.substr(0, 20) + '…' );
+    if (txt.length > LIMIT) {
+      // substr の第1引数に0, 第2引数にLIMIT を指定
+      $(this).text( txt.substr(0, LIMIT) + '…' );
     }
   });
 });
 
+
+
+// お問い合わせボタン、TOPへ戻るボタン
 
 $(function () {
   var btn = $('.c-contact-btn');

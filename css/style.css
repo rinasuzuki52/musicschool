@@ -2553,11 +2553,15 @@ c-side-title
 
 .p-list-item__image {
   width: 16.25rem;
+  aspect-ratio: 260/184;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 @media (max-width: 767px) {
   .p-list-item__image {
     width: 100%;
+    aspect-ratio: 335/220;
   }
 }
 
