@@ -302,16 +302,23 @@
     }
 }
 
-.p-pagination__article {
-    width: rem(260);
-    transition: all 0.3s ease;
-    @include sp {
-        width: rem(156);
-    }
-    &:hover {
-        opacity: 0.5;
-    }
+.p-pagination a {
+  width: rem(260);
+  @include sp {
+    width: 46.6%;
+  }
 }
+
+// .p-pagination__article {
+//     width: rem(260);
+//     transition: all 0.3s ease;
+//     @include sp {
+//         width: rem(156);
+//     }
+//     &:hover {
+//         opacity: 0.5;
+//     }
+// }
 
 .p-pagination__prev {
     background-color: $font-color1;
