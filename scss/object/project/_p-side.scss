@@ -16,6 +16,19 @@
 
 .p-side-magazine__banner {
     position: relative;
+    aspect-ratio: 220 / 170;
+    overflow: hidden;
+    transition: .4s ease;
+    &:hover {
+        opacity: 0.5;
+    }
+    @include sp {
+        aspect-ratio: 295 / 228;
+    }
+}
+
+.p-side-magazine__banner img {
+    object-fit: cover;
 }
 
 .p-side-magazine__banner p {
@@ -51,7 +64,7 @@
     height: rem(40);
     background-color: #e8e8e8;
     padding-inline: rem(10);
-    font-size: rem(14);
+    font-size: rem(16);
     @include sp {
         height: rem(54);
     }
@@ -64,6 +77,10 @@
     display: grid;
     place-content: center;
     flex-shrink: 0;
+    transition:  .4s ease;
+    &:hover {
+        opacity: 0.5;
+    }
     @include sp {
         width: rem(54);
         height: rem(54);
@@ -102,6 +119,10 @@
     width: 100%;
     display: flex;
     column-gap: rem(15);
+    transition: .5s ease;
+    &:hover {
+        opacity: 0.5;
+    }
     @include sp {
         flex-direction: row;
         column-gap: rem(20);
@@ -110,6 +131,8 @@
 
 .p-side-recommend__image {
     width: rem(95);
+    aspect-ratio: 95 / 75;
+    overflow: hidden;
     @include sp {
         width: rem(160);
     }
@@ -130,7 +153,7 @@
     }
 }
 
-.p-side-recommend__title h3 {
+.p-side-recommend__title {
     font-size: rem(17);
     line-height: calc(28 / 17);
 }
@@ -139,22 +162,18 @@
 // p-side-category
 // ==========================================================================
 
-// .p-side-category__contents {
-//     width: 100%;
-//     margin-top: rem(15);
-//     @include sp {
-//         margin-top: rem(20);
-//     }
-// }
-
 .p-side-category__contents li {
     border-bottom: rem(1) solid $font-color1;
 }
 
-.p-side-category__contents a {
+.p-side-category__link {
     height: rem(46);
     display: flex;
     align-items: center;
     font-size: rem(17);
     line-height: calc(28 / 17);
+    transition: .5s ease;
+    &:hover {
+        opacity: 0.5;
+    }
 }
