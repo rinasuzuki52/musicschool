@@ -60,9 +60,12 @@
 
 .p-list-item__image {
     width: rem(260);
+    aspect-ratio: 260 / 184;
+    object-fit: cover;
     overflow: hidden;
     @include sp {
         width: 100%;
+        aspect-ratio: 335 / 220;
     }
 }
 
