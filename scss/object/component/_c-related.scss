@@ -68,7 +68,6 @@
 
 .c-related__image {
     width: rem(260);
-    overflow: hidden;
     @include sp {
         width: 100%;
     }
@@ -78,6 +77,14 @@
     width: rem(200);
     @include sp {
         width: 100%;
+    }
+}
+
+.c-related__image2 img {
+    aspect-ratio: 200 / 140;
+    object-fit: cover;
+    @include sp {
+        aspect-ratio: 160 / 110;
     }
 }
 

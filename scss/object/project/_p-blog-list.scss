@@ -59,12 +59,16 @@
 }
 
 .p-list-item__image {
-    width: rem(260);
-    aspect-ratio: 260 / 184;
-    object-fit: cover;
-    overflow: hidden;
+    width: rem(260); 
     @include sp {
         width: 100%;
+    }
+}
+
+.p-list-item__image img {
+    aspect-ratio: 260 / 184;
+    object-fit: cover;
+    @include sp {
         aspect-ratio: 335 / 200;
     }
 }

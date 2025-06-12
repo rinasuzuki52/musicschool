@@ -406,9 +406,12 @@
 
 .p-slider-card__img {
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.p-slider-card__img img {
     aspect-ratio: 270 / 190;
     object-fit: cover;
-    transition: transform 0.3s ease;
     @include sp {
         aspect-ratio: 335 / 200;
     }
@@ -776,6 +779,10 @@
 }
 
 .p-blog-card__image {
+    width: 100%;
+}
+
+.p-blog-card__image img {
     aspect-ratio: 260 / 200;
     object-fit: cover;
     @include sp {

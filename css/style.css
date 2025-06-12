@@ -936,7 +936,6 @@ c-side-title
 
 .c-related__image {
   width: 16.25rem;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .c-related__image {
@@ -950,6 +949,17 @@ c-side-title
 @media (max-width: 767px) {
   .c-related__image2 {
     width: 100%;
+  }
+}
+
+.c-related__image2 img {
+  aspect-ratio: 200/140;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .c-related__image2 img {
+    aspect-ratio: 160/110;
   }
 }
 
@@ -1407,13 +1417,16 @@ c-side-title
 
 .p-slider-card__img {
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.p-slider-card__img img {
   aspect-ratio: 270/190;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.3s ease;
 }
 @media (max-width: 767px) {
-  .p-slider-card__img {
+  .p-slider-card__img img {
     aspect-ratio: 335/200;
   }
 }
@@ -1805,12 +1818,16 @@ c-side-title
 }
 
 .p-blog-card__image {
+  width: 100%;
+}
+
+.p-blog-card__image img {
   aspect-ratio: 260/200;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 767px) {
-  .p-blog-card__image {
+  .p-blog-card__image img {
     aspect-ratio: 335/200;
   }
 }
@@ -2553,14 +2570,20 @@ c-side-title
 
 .p-list-item__image {
   width: 16.25rem;
-  aspect-ratio: 260/184;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .p-list-item__image {
     width: 100%;
+  }
+}
+
+.p-list-item__image img {
+  aspect-ratio: 260/184;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-list-item__image img {
     aspect-ratio: 335/200;
   }
 }
@@ -2621,8 +2644,17 @@ c-side-title
 
 .p-blog-details__image {
   width: 100%;
+}
+
+.p-blog-details__image img {
+  aspect-ratio: 600/350;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-blog-details__image img {
+    aspect-ratio: 335/200;
+  }
 }
 
 .p-blog-details__caption {
@@ -2696,14 +2728,18 @@ c-side-title
 .p-blog-body__image {
   margin-top: 1.0625rem;
   width: 20.9375rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 767px) {
   .p-blog-body__image {
     margin-top: 4.375rem;
     width: 100%;
   }
+}
+
+.p-blog-body__image img {
+  aspect-ratio: 335/200;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-blog-body__list {
@@ -2956,7 +2992,6 @@ c-side-title
 
 .p-prev__image img {
   aspect-ratio: 98/68;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

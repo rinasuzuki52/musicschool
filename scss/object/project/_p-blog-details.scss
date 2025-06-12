@@ -19,7 +19,14 @@
 
 .p-blog-details__image {
     width: 100%;
-    object-fit: cover;
+}
+
+.p-blog-details__image img {
+  aspect-ratio: 600 / 350;
+  object-fit: cover;
+  @include sp {
+    aspect-ratio: 335 / 200;
+  }
 }
 
 .p-blog-details__caption {
@@ -86,11 +93,15 @@
 .p-blog-body__image {
   margin-top: rem(17);
   width: rem(335);
-  object-fit: cover;
   @include sp {
     margin-top: rem(70);
     width: 100%;
   }
+}
+
+.p-blog-body__image img {
+  aspect-ratio: 335 / 200;
+  object-fit: cover;
 }
 
 .p-blog-body__list {
@@ -345,7 +356,6 @@
 
 .p-prev__image img {
     aspect-ratio: 98 / 68;
-    width: 100%;
     object-fit: cover;
 }
 
