@@ -164,9 +164,11 @@
 
 .p-side-category__contents li {
     border-bottom: rem(1) solid $font-color1;
+    width: 100%;
 }
 
 .p-side-category__link {
+    width: 100%;
     height: rem(46);
     display: flex;
     align-items: center;

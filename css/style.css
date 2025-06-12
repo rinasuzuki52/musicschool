@@ -2919,17 +2919,13 @@ c-side-title
   }
 }
 
-.p-pagination__article {
+.p-pagination a {
   width: 16.25rem;
-  transition: all 0.3s ease;
 }
 @media (max-width: 767px) {
-  .p-pagination__article {
-    width: 9.75rem;
+  .p-pagination a {
+    width: 46.6%;
   }
-}
-.p-pagination__article:hover {
-  opacity: 0.5;
 }
 
 .p-pagination__prev {
@@ -3881,9 +3877,11 @@ c-side-title
 
 .p-side-category__contents li {
   border-bottom: 0.0625rem solid #000;
+  width: 100%;
 }
 
 .p-side-category__link {
+  width: 100%;
   height: 2.875rem;
   display: flex;
   align-items: center;
