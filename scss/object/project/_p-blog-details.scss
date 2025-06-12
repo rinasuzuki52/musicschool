@@ -200,6 +200,10 @@
   column-gap: rem(10);
   font-weight: bold;
   color: $font-color2;
+  transition: .5s ease;
+  &:hover {
+      opacity: 0.5;
+  }
   @include sp {
     width: initial;
     flex: 1;
