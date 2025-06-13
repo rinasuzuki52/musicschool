@@ -21,6 +21,14 @@
     position: relative;
 }
 
+.p-fv-lower__bg img {
+    aspect-ratio: 1080 / 200;
+    object-fit: cover;
+    @include sp {
+        aspect-ratio: 375 / 300;
+    }
+}
+
 .p-fv-lower__bg::after {
     content: "";
     position: absolute;

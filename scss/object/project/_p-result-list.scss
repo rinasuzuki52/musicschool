@@ -9,7 +9,7 @@
 .p-result-section {
     padding-block: rem(69) rem(210);
     @include sp {
-        padding-block: rem(50) rem(203);
+        padding-block: rem(46) rem(203);
     }
 }
 
@@ -19,10 +19,10 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: rem(71) 12%;
     @include sp {
+        margin-top: rem(39);
         display: flex;
         flex-direction: column;
         row-gap: rem(41);
-        padding-block: rem(49) rem(60);
     }
 }
 
@@ -36,6 +36,18 @@
     }
     &:hover {
         opacity: 0.5;
+    }
+}
+
+.p-result-section__image {
+    width: 100%;
+}
+
+.p-result-section__image img {
+    aspect-ratio: 387 / 273;
+    object-fit: cover;
+    @include sp {
+        aspect-ratio: 335 / 200;
     }
 }
 
