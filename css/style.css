@@ -3776,22 +3776,21 @@ c-side-title
 
 .p-side-magazine__banner {
   position: relative;
-  aspect-ratio: 220/170;
-  overflow: hidden;
   transition: 0.4s ease;
 }
 .p-side-magazine__banner:hover {
   opacity: 0.5;
 }
-@media (max-width: 767px) {
-  .p-side-magazine__banner {
-    aspect-ratio: 295/228;
-  }
-}
 
 .p-side-magazine__banner img {
+  aspect-ratio: 220/170;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767px) {
+  .p-side-magazine__banner img {
+    aspect-ratio: 295/228;
+  }
 }
 
 .p-side-magazine__banner p {
@@ -3902,8 +3901,6 @@ c-side-title
 
 .p-side-recommend__image {
   width: 5.9375rem;
-  aspect-ratio: 95/75;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .p-side-recommend__image {
