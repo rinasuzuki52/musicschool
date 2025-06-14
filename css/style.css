@@ -3413,7 +3413,7 @@ c-side-title
   width: 6.25rem;
 }
 
-.p-result-section__textarea h3 {
+.p-result-section__texttitle {
   font-size: 1.25rem;
   line-height: 1.25;
   font-weight: 600;
