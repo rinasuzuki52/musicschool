@@ -16,19 +16,18 @@
 
 .p-side-magazine__banner {
     position: relative;
-    aspect-ratio: 220 / 170;
-    overflow: hidden;
     transition: .4s ease;
     &:hover {
         opacity: 0.5;
     }
-    @include sp {
-        aspect-ratio: 295 / 228;
-    }
 }
 
 .p-side-magazine__banner img {
+    aspect-ratio: 220 / 170;
     object-fit: cover;
+    @include sp {
+        aspect-ratio: 295 / 228;
+    }
 }
 
 .p-side-magazine__banner p {
@@ -131,8 +130,6 @@
 
 .p-side-recommend__image {
     width: rem(95);
-    aspect-ratio: 95 / 75;
-    overflow: hidden;
     @include sp {
         width: rem(160);
     }
