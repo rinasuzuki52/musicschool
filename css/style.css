@@ -3424,7 +3424,7 @@ c-side-title
 }
 
 .p-result-section__caption {
-  width: 6.25rem;
+  min-width: 6.25rem;
 }
 
 .p-result-section__texttitle {
