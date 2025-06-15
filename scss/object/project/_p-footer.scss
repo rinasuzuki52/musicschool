@@ -31,12 +31,14 @@
 
 .p-footer__copyright {
     margin-top: rem(13);
+    margin-bottom: rem(-6);
     margin-inline: auto;
     text-align: center;
     font-size: rem(15);
     line-height: calc(33 / 15);
     @include sp {
         margin-top:  rem(19);
+        margin-bottom: 0;
         line-height: calc(20 / 15);
     }
 }
@@ -52,7 +54,7 @@
 
 .p-footer__snsbtn a {
     display: inline-block;
-    padding: 0 rem(6) rem(6) rem(6);
+    padding: rem(6);
     transition: all .4s;
     cursor: pointer;
     @include sp {
