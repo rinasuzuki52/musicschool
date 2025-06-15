@@ -80,6 +80,14 @@
     }
 }
 
+.c-related__image img {
+    aspect-ratio: 260 / 183;
+    object-fit: cover;
+    @include sp {
+        aspect-ratio: 160 / 113;
+    }
+}
+
 .c-related__image2 img {
     aspect-ratio: 200 / 140;
     object-fit: cover;
@@ -89,7 +97,7 @@
 }
 
 .c-related__caption {
-    width: rem(100);
+    min-width: rem(100);
     @include sp {
         width: rem(80);
     }
