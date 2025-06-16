@@ -20,21 +20,19 @@
     max-width: rem(880);
     display: flex;
     height: 100%;
+    flex-wrap: nowrap;            // 折り返さない
+    white-space: nowrap;          // テキストも折り返さない
     column-gap: rem(17);
     align-items: center;
-    flex-wrap: wrap;
     margin: 0 auto;
     @include sp {
         column-gap: rem(17);
     }
 }
 
-.p-breadcrumbs__list2 {
-    column-gap: rem(20);
-}
-
 .p-breadcrumbs__list li {
     height: 100%;
+    flex-shrink: 0;    /* アイテムを縮めない */
 }
 
 .p-breadcrumbs__link {
@@ -64,14 +62,5 @@
         line-height: calc(33 / 16);
         display: flex;
         align-items: center;
-    }
-}
-
-.p-breadcrumbs__text {
-    line-height: calc(33 / 16);
-    padding-block: 0;
-    @include sp {
-        line-height: 1.2;
-        padding-block: rem(4) rem(6);
     }
 }

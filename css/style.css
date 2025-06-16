@@ -2218,10 +2218,11 @@ c-side-title
   max-width: 55rem;
   display: flex;
   height: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   -moz-column-gap: 1.0625rem;
        column-gap: 1.0625rem;
   align-items: center;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -2231,13 +2232,9 @@ c-side-title
   }
 }
 
-.p-breadcrumbs__list2 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-}
-
 .p-breadcrumbs__list li {
   height: 100%;
+  flex-shrink: 0; /* アイテムを縮めない */
 }
 
 .p-breadcrumbs__link {
@@ -2271,17 +2268,6 @@ c-side-title
     line-height: 2.0625;
     display: flex;
     align-items: center;
-  }
-}
-
-.p-breadcrumbs__text {
-  line-height: 2.0625;
-  padding-block: 0;
-}
-@media (max-width: 767px) {
-  .p-breadcrumbs__text {
-    line-height: 1.2;
-    padding-block: 0.25rem 0.375rem;
   }
 }
 
