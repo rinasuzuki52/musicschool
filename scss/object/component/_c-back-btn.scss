@@ -19,10 +19,10 @@
     right: rem(116);
     z-index: 999;
     cursor: pointer;
-    // transition: all .3s;
-    // &:hover {
-    //     opacity: 0.5;
-    // }
+    transition: all .5s;
+    &:hover {
+        opacity: 0.5;
+    }
     @include sp {
         right: rem(20);
     }
