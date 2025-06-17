@@ -141,7 +141,7 @@
 }
 
 .p-details__related {
-    margin-top: rem(99);
+    margin-top: rem(101);
     @include sp {
         margin-top: rem(62);
     }
@@ -157,7 +157,7 @@
     font-size: rem(17);
     line-height: calc(30 / 17);
     text-align: left;
-    padding: rem(3) rem(20) rem(3);
+    padding: rem(3) rem(20) rem(4);
     width: 100%;
     @include sp {
         padding: rem(4) rem(20) rem(3);
