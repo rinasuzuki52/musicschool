@@ -13,6 +13,9 @@
 .p-breadcrumbs__list {
     width: 100%;
     height: 100%;
+    @include sp {
+        overflow-x: auto;    /* 横スクロール有効化 */
+    }
 }
 
 .p-breadcrumbs__list ul {
@@ -26,19 +29,34 @@
     align-items: center;
     margin: 0 auto;
     @include sp {
-        column-gap: rem(17);
+        width: auto;
+        max-width: none;
+        display: inline-flex;
     }
 }
 
 .p-breadcrumbs__list li {
     height: 100%;
+    min-width: 0;
     flex-shrink: 0;    /* アイテムを縮めない */
+    /* 最後の項目だけは縮める */
+    &:last-child {
+        flex-shrink: 1;
+        @include sp {
+            flex-shrink: 0;
+        }
+    }
 }
 
 .p-breadcrumbs__link {
     height: 100%;
     font-size: rem(16);
     line-height: 1;
+    display: block;           // ブロックレベルにして幅指定を反映
+    overflow: hidden;         // はみ出しを隠す
+    text-overflow: ellipsis;  // 省略記号
+    white-space: nowrap;      // 改行させない
+    max-width: 100%;          // li の幅いっぱいまで
     padding-block: rem(18) rem(16);
     transition: all .4s;
     &:hover {
@@ -47,8 +65,10 @@
     @include sp {
         padding-block: rem(3) 0;
         line-height: calc(33 / 16);
-        display: flex;
-        align-items: center;
+        overflow: visible;   /* はみ出しを隠さない */
+        text-overflow: clip; /* 省略しない */
+        // display: flex;
+        // align-items: center;
     }
 }
 
@@ -57,10 +77,17 @@
     font-size: rem(16);
     line-height: 1;
     padding-block: rem(18) rem(16);
+    display: block;           // ブロックレベルにして幅指定を反映
+    overflow: hidden;         // はみ出しを隠す
+    text-overflow: ellipsis;  // 省略記号
+    white-space: nowrap;      // 改行させない
+    max-width: 100%;          // li の幅いっぱいまで
     @include sp {
         padding-block: rem(3) 0;
         line-height: calc(33 / 16);
-        display: flex;
-        align-items: center;
+        overflow: visible;   /* はみ出しを隠さない */
+        text-overflow: clip; /* 省略しない */
+        // display: flex;
+        // align-items: center;
     }
 }

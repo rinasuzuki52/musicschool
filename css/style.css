@@ -2212,6 +2212,11 @@ c-side-title
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .p-breadcrumbs__list {
+    overflow-x: auto; /* 横スクロール有効化 */
+  }
+}
 
 .p-breadcrumbs__list ul {
   width: 100%;
@@ -2227,20 +2232,36 @@ c-side-title
 }
 @media (max-width: 767px) {
   .p-breadcrumbs__list ul {
-    -moz-column-gap: 1.0625rem;
-         column-gap: 1.0625rem;
+    width: auto;
+    max-width: none;
+    display: inline-flex;
   }
 }
 
 .p-breadcrumbs__list li {
   height: 100%;
+  min-width: 0;
   flex-shrink: 0; /* アイテムを縮めない */
+  /* 最後の項目だけは縮める */
+}
+.p-breadcrumbs__list li:last-child {
+  flex-shrink: 1;
+}
+@media (max-width: 767px) {
+  .p-breadcrumbs__list li:last-child {
+    flex-shrink: 0;
+  }
 }
 
 .p-breadcrumbs__link {
   height: 100%;
   font-size: 1rem;
   line-height: 1;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
   padding-block: 1.125rem 1rem;
   transition: all 0.4s;
 }
@@ -2251,8 +2272,8 @@ c-side-title
   .p-breadcrumbs__link {
     padding-block: 0.1875rem 0;
     line-height: 2.0625;
-    display: flex;
-    align-items: center;
+    overflow: visible; /* はみ出しを隠さない */
+    text-overflow: clip; /* 省略しない */
   }
 }
 
@@ -2261,13 +2282,18 @@ c-side-title
   font-size: 1rem;
   line-height: 1;
   padding-block: 1.125rem 1rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 @media (max-width: 767px) {
   .p-breadcrumbs__item {
     padding-block: 0.1875rem 0;
     line-height: 2.0625;
-    display: flex;
-    align-items: center;
+    overflow: visible; /* はみ出しを隠さない */
+    text-overflow: clip; /* 省略しない */
   }
 }
 
