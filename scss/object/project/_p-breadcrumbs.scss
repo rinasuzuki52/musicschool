@@ -15,6 +15,12 @@
     height: 100%;
     @include sp {
         overflow-x: auto;    /* 横スクロール有効化 */
+        /* スクロールバー非表示設定 */
+        -ms-overflow-style: none;  /* IE・Edge */
+        scrollbar-width: none;     /* Firefox */
+        &::-webkit-scrollbar {     /* Chrome, Safari, Opera */
+        display: none;
+        }
     }
 }
 
@@ -67,8 +73,6 @@
         line-height: calc(33 / 16);
         overflow: visible;   /* はみ出しを隠さない */
         text-overflow: clip; /* 省略しない */
-        // display: flex;
-        // align-items: center;
     }
 }
 
@@ -87,7 +91,5 @@
         line-height: calc(33 / 16);
         overflow: visible;   /* はみ出しを隠さない */
         text-overflow: clip; /* 省略しない */
-        // display: flex;
-        // align-items: center;
     }
 }

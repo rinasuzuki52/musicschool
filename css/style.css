@@ -2220,6 +2220,12 @@ c-side-title
 @media (max-width: 767px) {
   .p-breadcrumbs__list {
     overflow-x: auto; /* 横スクロール有効化 */
+    /* スクロールバー非表示設定 */
+    -ms-overflow-style: none; /* IE・Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .p-breadcrumbs__list::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
   }
 }
 
