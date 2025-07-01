@@ -64,25 +64,6 @@ $(function() {
 });
 
 
-  
-//TOPアコーディオン
-// $(function() {
-//   $('.p-qa-list__a').hide(); // 最初は答えを非表示に
-
-//   $('.p-qa-list__q').on('click', function() {
-//     var $answer = $(this).next('.p-qa-list__a');
-
-//     if ($answer.is(':visible')) {
-//       $answer.slideUp();
-//       $(this).removeClass('active');
-//     } else {
-//       $answer.slideDown();
-//       $(this).addClass('active');
-//     }
-//   });
-// });
-
-
 // 5文字まで表示
 $(function(){
   // 表示文字数の上限（ここでは25文字に設定）
