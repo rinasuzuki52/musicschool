@@ -659,6 +659,7 @@
 
 .p-qa-list__q {
     display: flex;
+    text-align: center;
     position: relative;
     padding-block: rem(15);
     cursor: pointer;
@@ -669,6 +670,7 @@
 
 .p-qa-list__a {
     display: flex;
+    text-align: center;
     position: relative;
     padding-block: rem(15);
     background-color: rgba(203, 0, 0, 0.098);
@@ -704,19 +706,18 @@
 }
 
 .p-qa-list__text {
-    display: flex;
-    align-items: center;
+    text-align: left;
     padding-left: rem(10);
+    padding-right: rem(60);
     font-size: rem(17);
     line-height: calc(30 / 17);
     font-weight: 600;
-    width: 87.2%;
+    flex: 1;
     @include sp {
         padding-left: rem(20);
         font-size: rem(16);
         line-height: calc(30 / 16);
         font-weight: 500;
-        width: 75.2%;
     }
 }
 
