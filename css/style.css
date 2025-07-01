@@ -4013,11 +4013,16 @@ c-side-title
   }
 }
 .u-scroll-show {
+  opacity: 0;
   visibility: hidden;
+  transform: translateY(20px);
   pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
 
 .u-scroll-show.active {
+  opacity: 1;
   visibility: visible;
+  transform: translateY(0);
   pointer-events: auto;
 }

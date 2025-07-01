@@ -15,14 +15,34 @@
     }
 }
 
+// .u-scroll-show {
+//     // opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
+
+// .u-scroll-show.active {
+//     // opacity: 1;
+//     visibility: visible;
+//     pointer-events: auto;
+// }
+
 .u-scroll-show {
-    // opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  // 初期状態（非表示）
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: 
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    visibility 0.5s ease;
 }
 
 .u-scroll-show.active {
-    // opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  // 表示状態
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
