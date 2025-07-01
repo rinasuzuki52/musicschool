@@ -45,7 +45,7 @@ c-pagination
     font-size: rem(18);
     font-weight: 600;
     line-height: calc(30 / 18);
-    transition: all 0.3s ease;;
+    transition: all 0.5s ease;
     @include sp {
         font-size: rem(16);
         line-height: calc(28 / 16);
