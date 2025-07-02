@@ -1007,6 +1007,10 @@ c-side-title
   font-size: 1.25rem;
   line-height: 1.25;
   font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .c-related__title {
@@ -2813,12 +2817,6 @@ c-side-title
   }
 }
 
-.p-blog-body__image img {
-  aspect-ratio: 335/200;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-blog-body__list {
   margin-top: 1.75rem;
 }
@@ -2915,6 +2913,10 @@ c-side-title
   color: #cb0000;
   margin-top: 1.125rem;
   text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.p-blog-body__link:hover {
+  opacity: 0.5;
 }
 
 .p-sns-share {
@@ -3071,7 +3073,7 @@ c-side-title
   width: 6.125rem;
 }
 
-.p-prev__image img {
+.p-pagination__image img {
   aspect-ratio: 98/68;
   -o-object-fit: cover;
      object-fit: cover;
