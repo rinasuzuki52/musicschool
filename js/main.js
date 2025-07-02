@@ -110,23 +110,6 @@ $(function(){
   });
 });
 
-
-// 30文字まで
-$(function(){
-  // 表示文字数の上限（ここでは15文字に設定）
-  const LIMIT = 30;
-
-  // 対象となるセレクタをカンマでつなぐ
-  $('.p-result-section__texttitle').each(function(){
-    const txt = $(this).text().trim();
-    if (txt.length > LIMIT) {
-      // substr の第1引数に0, 第2引数にLIMIT を指定
-      $(this).text( txt.substr(0, LIMIT) + '…' );
-    }
-  });
-});
-
-
 // お問い合わせボタン、TOPへ戻るボタン
 
 $(function () {
