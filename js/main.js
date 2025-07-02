@@ -86,7 +86,7 @@ $(function(){
   const LIMIT = 25;
 
   // 対象となるセレクタをカンマでつなぐ
-  $('.p-blog-card__title, .p-list-item__title, .p-pagination__title, .c-related__title, .p-prev__title').each(function(){
+  $('.p-blog-card__title, .p-list-item__title, .p-pagination__title, .p-prev__title').each(function(){
     const txt = $(this).text().trim();
     if (txt.length > LIMIT) {
       // substr の第1引数に0, 第2引数にLIMIT を指定
