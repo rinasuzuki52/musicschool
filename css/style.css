@@ -739,11 +739,11 @@ c-title2(h2)
 }
 @media (max-width: 767px) {
   .c-contact-btn {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
     padding: 0.75rem 6.3125rem 0.75rem 6.125rem;
     bottom: 19rem;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
     width: 20.9375rem;
     white-space: nowrap;
   }

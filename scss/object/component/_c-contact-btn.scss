@@ -21,11 +21,11 @@
     right: 0;
     transition: 0.5s ease;
     @include sp {
+        left: 50%      !important;
+        right: auto    !important;
+        transform: translateX(-50%) !important;
         padding: rem(12) rem(101) rem(12) rem(98);
         bottom: rem(304);
-        left: 50%;
-        right: auto; // 右固定を解除
-        transform: translateX(-50%);
         width: rem(335);
         white-space: nowrap;
     }
