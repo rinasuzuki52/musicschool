@@ -3274,7 +3274,7 @@ c-side-title
   background: #FFF;
   border: 0.03125rem solid #000;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
   z-index: 9;
