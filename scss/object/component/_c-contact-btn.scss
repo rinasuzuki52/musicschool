@@ -19,7 +19,11 @@
     position: absolute;
     bottom: 28.2rem;
     right: 0;
-    transition: 0.5s ease;
+    transition: all 0.5s ease ; 
+    &:hover {
+     color: $main-color;
+     background-color: $font-color2;
+    }
     @include sp {
         left: 50%      !important;
         right: auto    !important;
