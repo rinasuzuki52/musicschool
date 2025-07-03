@@ -704,7 +704,8 @@ c-title2(h2)
   right: 7.25rem;
   z-index: 999;
   cursor: pointer;
-  transition: all 0.5s;
+  /* ホバー時のフェード */
+  transition: opacity 0.5s ease;
 }
 .c-back-btn:hover {
   opacity: 0.5;
@@ -735,7 +736,11 @@ c-title2(h2)
   position: absolute;
   bottom: 28.2rem;
   right: 0;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
+}
+.c-contact-btn:hover {
+  color: #cb0000;
+  background-color: #FFF;
 }
 @media (max-width: 767px) {
   .c-contact-btn {
@@ -4042,15 +4047,13 @@ c-side-title
 }
 .u-scroll-show {
   opacity: 0;
-  visibility: hidden;
   transform: translateY(20px);
   pointer-events: none;
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .u-scroll-show.active {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
 }
