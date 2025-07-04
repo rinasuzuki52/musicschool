@@ -121,8 +121,9 @@
     font-size: rem(20);
     line-height: calc(25 / 20);
     font-weight: 600;
+    // ３行以上は省略
     display: -webkit-box;
-     -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
     @include sp {
