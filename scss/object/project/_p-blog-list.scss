@@ -110,5 +110,6 @@
         font-size: rem(16);
         line-height: calc(30 / 16);
         margin-top: rem(8);
+        -webkit-line-clamp: 5;
     }
 }

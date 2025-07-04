@@ -715,6 +715,7 @@
     flex: 1;
     @include sp {
         padding-left: rem(20);
+        padding-right: rem(48);
         font-size: rem(16);
         line-height: calc(30 / 16);
         font-weight: 500;
