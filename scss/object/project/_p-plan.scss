@@ -64,6 +64,9 @@
       top: 65%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include sp {
+        top: 53%;
+      }
     }
   
     &::after {
@@ -72,6 +75,9 @@
       top: 65%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include sp {
+        top: 50%;
+      }
     }
   }
 

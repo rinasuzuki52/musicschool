@@ -1776,6 +1776,7 @@ c-side-title
 @media (max-width: 767px) {
   .p-qa-list__text {
     padding-left: 1.25rem;
+    padding-right: 3rem;
     font-size: 1rem;
     line-height: 1.875;
     font-weight: 500;
@@ -2400,12 +2401,22 @@ c-side-title
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 767px) {
+  .p-plan-price__plus::before {
+    top: 53%;
+  }
+}
 .p-plan-price__plus::after {
   width: 1.15625rem;
   height: 0.1875rem;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .p-plan-price__plus::after {
+    top: 50%;
+  }
 }
 
 .p-plan-price__text {
@@ -2712,6 +2723,7 @@ c-side-title
     font-size: 1rem;
     line-height: 1.875;
     margin-top: 0.5rem;
+    -webkit-line-clamp: 5;
   }
 }
 
