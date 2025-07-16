@@ -2295,7 +2295,8 @@ c-side-title
   height: 100%;
   font-size: 1rem;
   line-height: 1;
-  display: block;
+  align-items: center;
+  display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2315,7 +2316,6 @@ c-side-title
 }
 
 .p-breadcrumbs__item {
-  height: 100%;
   font-size: 1rem;
   line-height: 1;
   display: block;
@@ -2331,14 +2331,6 @@ c-side-title
     overflow: visible; /* はみ出しを隠さない */
     text-overflow: clip; /* 省略しない */
   }
-}
-
-/* ▼ 追加・変更 --------------------------- */
-/* <a> と <p> 両方まとめて指定 */
-.p-breadcrumbs__link,
-.p-breadcrumbs__item {
-  display: inline-flex;
-  align-items: center;
 }
 
 .p-plan-price {
