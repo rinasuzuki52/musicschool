@@ -61,12 +61,12 @@
     height: 100%;
     font-size: rem(16);
     line-height: 1;
-    display: block;           // ブロックレベルにして幅指定を反映
+    align-items: center;
+    display: flex;           // ブロックレベルにして幅指定を反映
     overflow: hidden;         // はみ出しを隠す
     text-overflow: ellipsis;  // 省略記号
     white-space: nowrap;      // 改行させない
     max-width: 100%;          // li の幅いっぱいまで
-    // padding-block: rem(18) rem(16);
     transition: all .4s;
     &:hover {
     opacity: 0.5;
@@ -80,10 +80,8 @@
 }
 
 .p-breadcrumbs__item {
-    height: 100%;
     font-size: rem(16);
     line-height: 1;
-    // padding-block: rem(18) rem(16);
     display: block;           // ブロックレベルにして幅指定を反映
     overflow: hidden;         // はみ出しを隠す
     text-overflow: ellipsis;  // 省略記号
@@ -95,12 +93,4 @@
         overflow: visible;   /* はみ出しを隠さない */
         text-overflow: clip; /* 省略しない */
     }
-}
-
-/* ▼ 追加・変更 --------------------------- */
-/* <a> と <p> 両方まとめて指定 */
-.p-breadcrumbs__link,
-.p-breadcrumbs__item {
-  display: inline-flex;   // ← 自身もフレックスに
-  align-items: center;    // ← 中身（文字）を縦中央
 }
