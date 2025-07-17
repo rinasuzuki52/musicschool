@@ -3427,16 +3427,19 @@ c-side-title
 
 .p-result-section__item {
   width: 24.1875rem;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 @media (max-width: 767px) {
   .p-result-section__item {
     width: 100%;
   }
 }
-.p-result-section__item:hover {
+
+.p-result-section__item a {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.p-result-section__item a:hover {
   opacity: 0.7;
 }
 
