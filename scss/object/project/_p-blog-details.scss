@@ -99,10 +99,6 @@
   }
 }
 
-// .p-blog-body__image img {
-//   aspect-ratio: 335 / 200;
-//   object-fit: cover;
-// }
 
 .p-blog-body__list {
   margin-top: rem(28);
@@ -186,7 +182,7 @@
   color: $main-color;
   margin-top: rem(18);
   text-decoration: underline;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   &:hover {
       opacity: 0.5;
   }
@@ -215,7 +211,7 @@
   column-gap: rem(10);
   font-weight: bold;
   color: $font-color2;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   &:hover {
       opacity: 0.7;
   }
