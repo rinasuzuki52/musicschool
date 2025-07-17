@@ -707,15 +707,14 @@ c-title2(h2)
   z-index: 999;
   cursor: pointer;
   /* ホバー時のフェード */
-  transition: opacity 0.5s ease;
-}
-.c-back-btn:hover {
-  opacity: 0.5;
 }
 @media (max-width: 767px) {
   .c-back-btn {
     right: 1.25rem;
   }
+}
+.c-back-btn:hover {
+  opacity: 0.5 !important;
 }
 
 .c-back-btn__icon {
@@ -738,7 +737,7 @@ c-title2(h2)
   position: absolute;
   bottom: 28.2rem;
   right: 0;
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
 }
 .c-contact-btn:hover {
   color: #cb0000;
@@ -4018,13 +4017,11 @@ c-side-title
 }
 .u-scroll-show {
   opacity: 0;
-  transform: translateY(20px);
   pointer-events: none;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .u-scroll-show.active {
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }

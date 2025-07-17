@@ -19,13 +19,12 @@
     right: rem(116);
     z-index: 999;
     cursor: pointer;
-    /* ホバー時のフェード */
-    transition: opacity 0.5s ease;
-    &:hover {
-        opacity: 0.5;
-    }
     @include sp {
         right: rem(20);
+    }
+     /* ホバー時のフェード */
+    &:hover {
+     opacity: 0.5 !important;
     }
 }
 

@@ -19,7 +19,9 @@
     position: absolute;
     bottom: 28.2rem;
     right: 0;
-    transition: all 0.5s ease ; 
+    transition:
+    background-color 0.5s ease, // ← 色はゆっくり
+    color 0.5s ease !important; // ← 同じくゆっくり
     &:hover {
      color: $main-color;
      background-color: $font-color2;
