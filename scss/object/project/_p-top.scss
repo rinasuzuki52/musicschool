@@ -315,7 +315,6 @@
 }
 
 .p-top-voice__inner {
-    // max-width: rem(970);
     max-width: rem(1030);
     padding-inline: rem(60);
     @include sp {
@@ -388,7 +387,7 @@
 
 .p-slider-card__img img {
     width: 100%;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     aspect-ratio: 270 / 190;
     object-fit: cover;
     @include sp {
@@ -403,7 +402,7 @@
     font-weight: 600;
     text-align: center;
     color: $font-color2;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     @include sp {
         padding-top: rem(27);
     }
@@ -416,7 +415,7 @@
     font-weight: 500;
     letter-spacing: -0.05em;
     color: $font-color2;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     @include sp {
         letter-spacing: 0;
     }
@@ -432,7 +431,7 @@
   z-index: 100 !important;
   transform: translateY(-50%);
   cursor: pointer;
-  transition: all .4s;
+  transition: all .3s;
   &:hover {
     opacity: 0.7;
 }
@@ -737,7 +736,7 @@
     font-size: rem(18);
     line-height: calc(18 / 18);
     border-bottom: 0.05rem solid;
-    transition: all .4s;
+    transition: all .3s;
     cursor: pointer;
     &:hover {
     opacity: 0.7;

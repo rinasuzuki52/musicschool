@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     column-gap: rem(10);
-    transition: 0.3s;
+    transition: 0.3s ease;
     &:hover {
         opacity: 0.7;
     }
@@ -108,7 +108,7 @@
         position: fixed;
         top: rem(50);
         right: -120%;
-        transition: all .5s;
+        transition: all .3s;
     }
 }
 .p-header-nav__lists.active {
@@ -134,7 +134,7 @@
     font-weight: 700;
     color: $font-color1;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
         opacity: 0.7;
     }

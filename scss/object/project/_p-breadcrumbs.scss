@@ -67,7 +67,7 @@
     text-overflow: ellipsis;  // 省略記号
     white-space: nowrap;      // 改行させない
     max-width: 100%;          // li の幅いっぱいまで
-    transition: all .4s;
+    transition: all .3s;
     &:hover {
     opacity: 0.5;
     }
