@@ -1228,9 +1228,9 @@ c-side-title
   height: 1.5rem;
   border-top: 0.1875rem solid #CB0000;
   border-left: 0.1875rem solid #CB0000;
-  top: -47%;
-  left: -0.1rem;
-  transform: translateY(-134%) rotate(45deg);
+  top: -200%;
+  left: -10%;
+  transform: rotate(45deg);
 }
 
 .p-flow-card:last-of-type .p-flow-card__circle::after {
@@ -1239,31 +1239,11 @@ c-side-title
   width: 0.1875rem;
   height: 12.125rem;
   background-color: #CB0000;
-  top: 0%;
+  top: -880%;
   left: 50%;
-  transform: translate(-50%, -91%);
+  transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
-  .p-flow-card:first-of-type .p-flow-card__circle::before {
-    content: "";
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    top: -47%;
-    left: -0.125rem;
-    transform: translateY(-134%) rotate(45deg);
-  }
-  .p-flow-card:last-of-type .p-flow-card__circle::after {
-    content: "";
-    position: absolute;
-    height: 12.125rem;
-    background-color: #CB0000;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -91%);
-  }
-}
 .p-top-message {
   padding-block: 4.25rem 3.75rem;
   background-color: #cb0000;
