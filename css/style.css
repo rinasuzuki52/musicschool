@@ -698,7 +698,7 @@ c-title2(h2)
   display: flex;
   width: 4.25rem;
   height: 4.25rem;
-  background-color: #7f7f7f;
+  background-color: rgba(0, 0, 0, 0.502);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
