@@ -2366,26 +2366,16 @@ c-side-title
 .p-plan-price__plus::before {
   width: 0.1875rem;
   height: 1.15625rem;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
-  .p-plan-price__plus::before {
-    top: 53%;
-  }
 }
 .p-plan-price__plus::after {
   width: 1.15625rem;
   height: 0.1875rem;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
-  .p-plan-price__plus::after {
-    top: 50%;
-  }
 }
 
 .p-plan-price__text {
