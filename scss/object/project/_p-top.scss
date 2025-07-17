@@ -630,6 +630,7 @@
 
 .p-qa-list__q {
     display: flex;
+    align-items: center;
     text-align: center;
     position: relative;
     padding-block: rem(15);
@@ -641,6 +642,7 @@
 
 .p-qa-list__a {
     display: flex;
+    align-items: center;
     text-align: center;
     position: relative;
     padding-block: rem(15);
@@ -652,16 +654,14 @@
 }
 
 .p-qa-list__circle {
-    display: flex;
     color: $font-color2;
     font-size: rem(20);
     line-height: calc(30 / 20);
     width: rem(35);
     height: rem(35);
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
     margin-left: rem(19.5);
+    padding-top: rem(2);
     @include sp {
         margin-left: rem(0);
         align-self: center;
@@ -682,22 +682,19 @@
     padding-right: rem(60);
     font-size: rem(17);
     line-height: calc(30 / 17);
-    font-weight: 600;
+    font-weight: 500;
     flex: 1;
     @include sp {
         padding-left: rem(20);
         padding-right: rem(48);
         font-size: rem(16);
         line-height: calc(30 / 16);
-        font-weight: 500;
     }
 }
 
 .p-qa-list__text-a {
     color: $main-color;
-    @include sp {
-        font-weight: 600;
-    }
+    font-weight: 600;
 }
 
 // ==========================================================================
