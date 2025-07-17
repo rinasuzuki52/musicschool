@@ -54,30 +54,22 @@
       content: "";
       position: absolute;
       background-color: $font-color1; // プラスの線の色（白）
-      @include sp {
-      }
     }
   
     &::before {
       width: rem(3);
       height: rem(18.5); // 縦線
-      top: 65%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      @include sp {
-        top: 53%;
-      }
     }
   
     &::after {
       width: rem(18.5);
       height: rem(3); // 横線
-      top: 65%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      @include sp {
-        top: 50%;
-      }
     }
   }
 
